@@ -1,0 +1,626 @@
+{
+  "name": "spring-petclinic-main",
+  "path": ".",
+  "type": "folder",
+  "children": [
+    {
+      "name": "spring-petclinic-main",
+      "path": "spring-petclinic-main",
+      "type": "folder",
+      "children": [
+        {
+          "name": ".devcontainer",
+          "path": "spring-petclinic-main\\.devcontainer",
+          "type": "folder",
+          "children": []
+        },
+        {
+          "name": ".github",
+          "path": "spring-petclinic-main\\.github",
+          "type": "folder",
+          "children": [
+            {
+              "name": "workflows",
+              "path": "spring-petclinic-main\\.github\\workflows",
+              "type": "folder",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": ".mvn",
+          "path": "spring-petclinic-main\\.mvn",
+          "type": "folder",
+          "children": [
+            {
+              "name": "wrapper",
+              "path": "spring-petclinic-main\\.mvn\\wrapper",
+              "type": "folder",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "gradle",
+          "path": "spring-petclinic-main\\gradle",
+          "type": "folder",
+          "children": [
+            {
+              "name": "wrapper",
+              "path": "spring-petclinic-main\\gradle\\wrapper",
+              "type": "folder",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "k8s",
+          "path": "spring-petclinic-main\\k8s",
+          "type": "folder",
+          "children": []
+        },
+        {
+          "name": "python-app",
+          "path": "spring-petclinic-main\\python-app",
+          "type": "folder",
+          "children": []
+        },
+        {
+          "name": "sdf",
+          "path": "spring-petclinic-main\\sdf",
+          "type": "folder",
+          "children": []
+        },
+        {
+          "name": "src",
+          "path": "spring-petclinic-main\\src",
+          "type": "folder",
+          "children": [
+            {
+              "name": "checkstyle",
+              "path": "spring-petclinic-main\\src\\checkstyle",
+              "type": "folder",
+              "children": []
+            },
+            {
+              "name": "main",
+              "path": "spring-petclinic-main\\src\\main",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "java",
+                  "path": "spring-petclinic-main\\src\\main\\java",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "org",
+                      "path": "spring-petclinic-main\\src\\main\\java\\org",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "springframework",
+                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "samples",
+                              "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "petclinic",
+                                  "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic",
+                                  "type": "folder",
+                                  "children": [
+                                    {
+                                      "name": "PetClinicApplication.java",
+                                      "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicApplication.java",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "PetClinicRuntimeHints.java",
+                                      "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicRuntimeHints.java",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "model",
+                                      "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\model",
+                                      "type": "folder",
+                                      "children": [
+                                        {
+                                          "name": "BaseEntity.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "NamedEntity.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "Person.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "package-info.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\package-info.java",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "owner",
+                                      "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\owner",
+                                      "type": "folder",
+                                      "children": [
+                                        {
+                                          "name": "Owner.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "OwnerController.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "OwnerRepository.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerRepository.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "Pet.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "PetController.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "PetType.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetType.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "PetTypeFormatter.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "PetTypeRepository.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeRepository.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "PetValidator.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "Visit.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "VisitController.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "package-info.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\package-info.java",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "package-info.java",
+                                      "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\package-info.java",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "system",
+                                      "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\system",
+                                      "type": "folder",
+                                      "children": [
+                                        {
+                                          "name": "CacheConfiguration.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "CrashController.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CrashController.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "WebConfiguration.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "WelcomeController.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WelcomeController.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "package-info.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\package-info.java",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "vet",
+                                      "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vet",
+                                      "type": "folder",
+                                      "children": [
+                                        {
+                                          "name": "Specialty.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Specialty.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "Vet.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "VetController.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "VetRepository.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetRepository.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "Vets.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vets.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "package-info.java",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\package-info.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "vet_repository.py",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\vet_repository.py",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "vetcontroller.py",
+                                          "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\vetcontroller.py",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "resources",
+                  "path": "spring-petclinic-main\\src\\main\\resources",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "db",
+                      "path": "spring-petclinic-main\\src\\main\\resources\\db",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "h2",
+                          "path": "spring-petclinic-main\\src\\main\\resources\\db\\h2",
+                          "type": "folder",
+                          "children": []
+                        },
+                        {
+                          "name": "mysql",
+                          "path": "spring-petclinic-main\\src\\main\\resources\\db\\mysql",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "factorial.py",
+                              "path": "spring-petclinic-main\\src\\main\\resources\\db\\mysql\\factorial.py",
+                              "type": "file"
+                            },
+                            {
+                              "name": "fibonacci.py",
+                              "path": "spring-petclinic-main\\src\\main\\resources\\db\\mysql\\fibonacci.py",
+                              "type": "file"
+                            },
+                            {
+                              "name": "src",
+                              "path": "spring-petclinic-main\\src\\main\\resources\\db\\mysql\\src",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "main",
+                                  "path": "spring-petclinic-main\\src\\main\\resources\\db\\mysql\\src\\main",
+                                  "type": "folder",
+                                  "children": [
+                                    {
+                                      "name": "resources",
+                                      "path": "spring-petclinic-main\\src\\main\\resources\\db\\mysql\\src\\main\\resources",
+                                      "type": "folder",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "postgres",
+                          "path": "spring-petclinic-main\\src\\main\\resources\\db\\postgres",
+                          "type": "folder",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "messages",
+                      "path": "spring-petclinic-main\\src\\main\\resources\\messages",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "static",
+                      "path": "spring-petclinic-main\\src\\main\\resources\\static",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "resources",
+                          "path": "spring-petclinic-main\\src\\main\\resources\\static\\resources",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "css",
+                              "path": "spring-petclinic-main\\src\\main\\resources\\static\\resources\\css",
+                              "type": "folder",
+                              "children": []
+                            },
+                            {
+                              "name": "fonts",
+                              "path": "spring-petclinic-main\\src\\main\\resources\\static\\resources\\fonts",
+                              "type": "folder",
+                              "children": []
+                            },
+                            {
+                              "name": "images",
+                              "path": "spring-petclinic-main\\src\\main\\resources\\static\\resources\\images",
+                              "type": "folder",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "templates",
+                      "path": "spring-petclinic-main\\src\\main\\resources\\templates",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "fragments",
+                          "path": "spring-petclinic-main\\src\\main\\resources\\templates\\fragments",
+                          "type": "folder",
+                          "children": []
+                        },
+                        {
+                          "name": "owners",
+                          "path": "spring-petclinic-main\\src\\main\\resources\\templates\\owners",
+                          "type": "folder",
+                          "children": []
+                        },
+                        {
+                          "name": "pets",
+                          "path": "spring-petclinic-main\\src\\main\\resources\\templates\\pets",
+                          "type": "folder",
+                          "children": []
+                        },
+                        {
+                          "name": "vets",
+                          "path": "spring-petclinic-main\\src\\main\\resources\\templates\\vets",
+                          "type": "folder",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "scss",
+                  "path": "spring-petclinic-main\\src\\main\\scss",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "test",
+              "path": "spring-petclinic-main\\src\\test",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "java",
+                  "path": "spring-petclinic-main\\src\\test\\java",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "org",
+                      "path": "spring-petclinic-main\\src\\test\\java\\org",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "springframework",
+                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "samples",
+                              "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "petclinic",
+                                  "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic",
+                                  "type": "folder",
+                                  "children": [
+                                    {
+                                      "name": "MySqlIntegrationTests.java",
+                                      "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "MysqlTestApplication.java",
+                                      "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\MysqlTestApplication.java",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "PetClinicIntegrationTests.java",
+                                      "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "PostgresIntegrationTests.java",
+                                      "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\PostgresIntegrationTests.java",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "model",
+                                      "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\model",
+                                      "type": "folder",
+                                      "children": [
+                                        {
+                                          "name": "ValidatorTests.java",
+                                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\model\\ValidatorTests.java",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "owner",
+                                      "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\owner",
+                                      "type": "folder",
+                                      "children": [
+                                        {
+                                          "name": "OwnerControllerTests.java",
+                                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "PetControllerTests.java",
+                                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "PetTypeFormatterTests.java",
+                                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "PetValidatorTests.java",
+                                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "VisitControllerTests.java",
+                                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "service",
+                                      "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\service",
+                                      "type": "folder",
+                                      "children": [
+                                        {
+                                          "name": "ClinicServiceTests.java",
+                                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "EntityUtils.java",
+                                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\EntityUtils.java",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "system",
+                                      "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\system",
+                                      "type": "folder",
+                                      "children": [
+                                        {
+                                          "name": "CrashControllerIntegrationTests.java",
+                                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "CrashControllerTests.java",
+                                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerTests.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "I18nPropertiesSyncTest.java",
+                                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "vet",
+                                      "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\vet",
+                                      "type": "folder",
+                                      "children": [
+                                        {
+                                          "name": "VetControllerTests.java",
+                                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "VetTests.java",
+                                          "path": "spring-petclinic-main\\src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetTests.java",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "jmeter",
+                  "path": "spring-petclinic-main\\src\\test\\jmeter",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
