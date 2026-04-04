@@ -1,49 +1,54 @@
-# AI Code Cartographer Skill
+# AI Code Cartographer Skill (All-Stack Universal Edition)
 
-The **AI Code Cartographer** is a specialized skill for exhaustively parsing a codebase to create a high-level call stack and structural graph (JSON) for Neo4j. It relies entirely on the AI's ability to analyze and relationship-map code without external tools.
+The **AI Code Cartographer** is the definitive engine for mapping the architectural and execution hierarchy of any enterprise codebase. It employs the **Universal Meta-Model (UCCS)** to unify diverse paradigms—Procedural, Object-Oriented, Scripting, and Batch Processing—into a high-fidelity Neo4j graph.
 
 ## Core Capabilities
-1.  **Exhaustive Scanning**: Traverses the entire directory and maintains a state of processed/pending files and FOLDERS.
-2.  **Structural Extraction**: Identifies `Module`, `File`, `Class`, `Constructor`, `Method`, `Function`, `Procedure`, `Enum`, `Interface`, `Override`, and `Inheritance`.
-3.  **Relationship Mapping**: Detects `CALLS`, `DEFINES`, `INHERITS`, `IMPLEMENTS`, and `OVERRIDES` links.
-4.  **Symbol Resolution**: Cross-references symbols across files to build a complete application "map".
-5.  **Project Hierarchy Mapping**: Maps the physical directory tree to a logical Neo4j graph using `Folder` and `File` nodes.
-6. **External Reference Capture**: Identifies and extracts calls to external libraries (e.g., `org.springframework.*`) as external method nodes to provide full context of the code's dependencies.
-7. **Advanced Edge Case Resolution**: Explicitly handles method overloading, anonymous classes, lambdas, generics, and multiple class definitions per file to ensure zero data loss in the structural map.
+1.  **Primitive-First Taxonomy**: Boils all language-specific constructs down to four universal labels: `:Container`, `:Structure`, `:Unit`, and `:Symbol`.
+2.  **Detect**: Identify the programming language of the target batch.
+3.  **Map**: Trigger the relevant **High-Precision Specialization Module** (e.g., `languages/java.md`, `languages/cobol.md`) to extract symbols according to UCCS standards.
+4.  **Cross-Reference**: Apply the URI ID policy (`lang://path#Symbol`) to link internal and cross-language calls.
+5.  **Multi-Paradigm Support**: Natively handles the "Infinite Stack"—COBOL, JCL, Progress 4GL, Delphi, .NET, Java, C/C++, Rust, HTML, CSS, TypeScript, SQL, and Shell—with absolute structural precision.
+6.  **Cross-Paradigm Resolution**:
+    - **Procedural (COBOL/C/4GL)**: Maps Paragraphs/Sections/Procedures as `:Unit` nodes.
+    - **Batch (JCL)**: Maps Jobs as `:Container` and Steps as `:Unit`.
+    - **Systems (C++/Go)**: Maps Templates, Namespaces, and Embedding as structural relationships.
+    - **Modern (JS/.NET)**: Maps Closures, Prototypes, and Async Triggers.
+3.  **Absolute ID Uniqueness**: Mandates a URI-based stable ID format (`lang://path/to/file#SymbolPath`) for zero collisions in polyglot projects.
+4.  **Zero-Dangling-Edge Mandate**: Every reference target must be instantiated as a node (Internal or External).
+5.  **Implicit Entry Point Detection**: Automatically identifies execution blocks outside named functions (Shell, COBOL, Python) and maps them as entry-point `:Units`.
+
+## Universal Taxonomy (UCCS)
+
+| Category | Constructs (Full Matrix) |
+| :--- | :--- |
+| **:Container** | Folder, File, Namespace, Package, Module, **COBOL Program**, **JCL Job**, **Delphi Unit**. |
+| **:Structure** | Class, Struct, Interface, Trait, Enum, **COBOL Section**, **Progress 4GL Temp-Table**, **C++ Template**. |
+| **:Unit** | Method, Function, Lambda, **COBOL Paragraph**, **JCL Step**, **Shell Command**, **SQL Procedure**. |
+| **:Symbol** | Field, Property, Variable, Constant, **COBOL Data Item**, **JCL DD Statement**, **CSS Selector**. |
+| **:Annotation** | Decorator, Attribute, Macro, Metadata, Pragma, **JS JSDoc**. |
+| **:External** | Any symbol residing in an external library, DLL, Copybook, or CDN. |
 
 ## Operational Protocol
 
-### 1. Initial Setup
-Run the `init_project.py` script to scan the workspace and generate `results/project_tree.json` and `results/status.json`.
-- `status.json` tracks the exhaustive completion of every file.
-- `project_tree.json` tracks the folder hierarchy.
+### 1. Initialization
+Run `init_project.py` to seed `status.json`.
+Initialize the base graph with URI-compliant `:Container` nodes for the directory structure.
 
 ### 2. Recursive Parsing Loop
-The AI MUST follow this cycle:
-1.  **Identify**: Find the next batch of `NOT_STARTED` files in `status.json`. **Recommended batch size: 5-10 files per iteration** to ensure exhaustive analysis and handle context limits.
-2.  **Analyze (Standard vs. Large)**:
-    *   **Standard (<2k lines)**: Extract all structural elements, parameters, types, and calls in a single pass.
-    *   **Large (>=2k lines)**: Switch to **Contextual Chunking Protocol**. Parse in 1,500-line segments with 200-line overlaps until the end-of-file. Maintain cross-chunk state for class and method scopes.
-3.  **Register**: Update `symbol_table.json` with new definitions and external references.
-4.  **Validate**: Verify that 100% of the file's visible symbols were caught, including edge cases like anonymous types and overloaded methods. Edge Case Audit: Ensure no ID collisions between overloads or classes in same file.
-5.  **Integrate**: Append extracted nodes and edges to `graph.json`.
-6.  **Update**: Mark files as `COMPLETED` in `status.json`.
-7.  **Loop**: If `NOT_STARTED` files remain, output the "CONTINUE" command.
+1.  **Analyze**: Use the **All-Stack Playbook** (parser_worker.md) to extract meta-model primitives.
+2.  **Validate**: Trigger the **Structural Validator Skill** for Case Audit and ID consistency. 
+3.  **Integrate**: Merge JSON if validation PASSED.
+4.  **Loop**: Output "CONTINUE" until `status.json` is 100%.
 
 ## JSON Schema (Neo4j)
 
-### Nodes
-- Labels: `Folder`, `File`, `Class`, `Method`, `Function`, `Enum`, `Interface`, `Lambda`, `AnonymousClass`.
-- Properties: `id` (MANDATORY UNIQUE), `name`, `fqn`, `path`, `line`, `params` (full types), `returns`, `access`, `static`, `abstract`.
-- Unique ID Policy:
-    *   **Class/Interface**: `Package.Name`
-    *   **Method/Function**: `FQN.Parent.MethodName(ParamTypes)` (to handle overloading)
-    *   **Nested/Anonymous**: `FQN.Parent.SymbolName$id`
+### Node Properties
+- `id`: `lang://relative_path#FQN(Signature)`
+- `label`: UCCS Label (e.g., `:Unit`)
+- `properties`: {name, fqn, line, lang, abstract, entry_point}
 
-### Edges
-- Types: `CONTAINS`, `CALLS`, `INHERITS`, `IMPLEMENTS`, `OVERRIDES`.
+### Edge Types
+- `[:CONTAINS]`, `[:CALLS]`, `[:EXTENDS]`, `[:IMPLEMENTS]`, `[:USES]`, `[:DECORATES]`, `[:TRIGGERS]`.
 
 ## Self-Prompting Instruction
-When the AI finishes a batch, it MUST output:
-"Parser Progress: [X/Y] files completed. Project tree synchronized. Continuing to next batch..."
-followed by a tool call to read the next set of files.
+"Parser Progress: [X/Y] files. All-Stack Meta-Model synchronized."

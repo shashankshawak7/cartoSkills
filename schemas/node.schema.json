@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UCCS Node Schema",
+  "description": "Formal schema for a Universal Code Cartography Schema (UCCS) structural node.",
+  "type": "object",
+  "required": ["id", "label", "properties"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Globally unique URI for the symbol (e.g., lang://relative/path#FQN).",
+      "pattern": "^[a-z_]+://.+#.+$"
+    },
+    "label": {
+      "type": "string",
+      "description": "The primitive architectural role of the node.",
+      "enum": ["Container", "Structure", "Unit", "Symbol", "Annotation", "External"]
+    },
+    "properties": {
+      "type": "object",
+      "required": ["name", "fqn", "path", "lang"],
+      "properties": {
+        "name": { "type": "string", "description": "Local name of the symbol." },
+        "fqn": { "type": "string", "description": "Fully Qualified Name." },
+        "path": { "type": "string", "description": "Relative file path from project root." },
+        "line": { "type": "integer", "minimum": 0 },
+        "lang": { "type": "string", "description": "Source language (e.g., java, cobol, js)." },
+        "parameters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "type"],
+            "properties": {
+              "name": { "type": "string" },
+              "type": { "type": "string" }
+            }
+          }
+        },
+        "returns": { "type": "string" },
+        "access": { "type": "string", "enum": ["public", "private", "protected", "package", "internal"] },
+        "static": { "type": "boolean", "default": false },
+        "abstract": { "type": "boolean", "default": false },
+        "async": { "type": "boolean", "default": false },
+        "entry_point": { "type": "boolean", "default": false },
+        "external": { "type": "boolean", "default": false },
+        "placeholder": { "type": "boolean", "default": false },
+        "metadata": { "type": "object", "description": "Flexible container for language-specific nuances." }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

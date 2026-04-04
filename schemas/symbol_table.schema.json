@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UCCS Symbol Table Schema",
+  "description": "Formal schema for the AI Code Cartographer's internal symbol reference table.",
+  "type": "object",
+  "patternProperties": {
+    "^[a-z_]+://.+#.+$": {
+      "type": "object",
+      "required": ["kind", "name", "target_file"],
+      "properties": {
+        "kind": { "enum": ["Structure", "Unit", "Symbol", "External"] },
+        "name": { "type": "string" },
+        "fqn": { "type": "string" },
+        "target_file": { "type": "string" },
+        "metadata": { "type": "object" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

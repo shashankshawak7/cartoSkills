@@ -1,43 +1,6 @@
 {
-  "files": [
-    {
-      "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicApplication.java",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicRuntimeHints.java",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    }
-  ],
-  "global_symbols": [],
-  "total_files": 51,
-  "completed_files": 0,
-  "root_dir": "C:\\Users\\shash\\Downloads\\spring-petclinic-main"
-}
+  "batches": [],
+  "current_batch_index": 0,
+  "status": "IDLE",
+  "last_updated": null
+}
