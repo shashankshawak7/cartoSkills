@@ -2,42 +2,42 @@
   "files": [
     {
       "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicApplication.java",
-      "status": "COMPLETED",
-      "extracted_symbols": ["PetClinicApplication", "main"],
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
       "error": null,
-      "parsed_at": "2026-04-05T03:22:00Z"
+      "parsed_at": null
     },
     {
       "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicRuntimeHints.java",
-      "status": "COMPLETED",
-      "extracted_symbols": ["PetClinicRuntimeHints", "registerHints"],
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
       "error": null,
-      "parsed_at": "2026-04-05T03:22:00Z"
+      "parsed_at": null
     },
     {
       "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java",
-      "status": "COMPLETED",
-      "extracted_symbols": ["BaseEntity", "getId", "setId", "isNew"],
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
       "error": null,
-      "parsed_at": "2026-04-05T03:22:00Z"
+      "parsed_at": null
     },
     {
       "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java",
-      "status": "COMPLETED",
-      "extracted_symbols": ["NamedEntity", "getName", "setName", "toString"],
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
       "error": null,
-      "parsed_at": "2026-04-05T03:22:00Z"
+      "parsed_at": null
     },
     {
       "path": "spring-petclinic-main\\src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java",
-      "status": "COMPLETED",
-      "extracted_symbols": ["Person", "getFirstName", "setFirstName", "getLastName", "setLastName"],
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
       "error": null,
-      "parsed_at": "2026-04-05T03:22:00Z"
+      "parsed_at": null
     }
   ],
   "global_symbols": [],
   "total_files": 51,
-  "completed_files": 5,
+  "completed_files": 0,
   "root_dir": "C:\\Users\\shash\\Downloads\\spring-petclinic-main"
 }
