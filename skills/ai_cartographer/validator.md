@@ -9,8 +9,9 @@ Any payload containing schema violations, hallucinogenic data, or orphaned relat
 
 ### Validation Vector 1: Taxonomy & Logical Intent
 1.  **Label Enforcement**: Assert that the assigned UCCS label (`:Container`, `:Structure`, `:Unit`, `:Symbol`, `:Annotation`, `:External`) logically fits the extracted code construct based on the language playbook (e.g. A Python Class should not be mapped as a `:Unit`).
-2.  **Property Relevance**: Ensure properties mapped (like `architectural_risk`) reflect genuine structural hotspots and are not hallucinated to hit arbitrary thresholds.
-*(Note: Rigid JSON schema enforcement (`node.schema.json`) is handled programmatically via `validate_graph.py`. The LLM validator focuses primarily on semantic mapping intent.)*
+2.  **Edge Type Enforcement**: Verify that all relationships use exactly one of: `CONTAINS`, `CALLS`, `EXTENDS`, `IMPLEMENTS`, `USES`, `DECORATES`, `TRIGGERS`, `STYLES`, `RENDERS`, `OVERRIDES`, `UNKNOWN_RELATION`.
+3.  **Property Relevance**: Ensure properties mapped (like `architectural_risk`) reflect genuine structural hotspots and are not hallucinated to hit arbitrary thresholds.
+*(Note: Rigid JSON schema enforcement (`node.schema.json` and `edge.schema.json`) is handled programmatically via `validate_graph.py`. The LLM validator focuses primarily on semantic mapping intent.)*
 
 ### Validation Vector 2: URI Identity Integrity
 1.  **Format Compliance**: Validate that every `$id` string adheres precisely to: `lang://relative_path#FQN(Signature)`.

@@ -11,25 +11,35 @@ def load_json(filepath):
         return json.load(f)
 
 def validate_against_schema(data, schema_file):
-    schema_path = os.path.join(os.path.dirname(__file__), "..", "schemas", schema_file)
+    import jsonschema
+
+    schemas_dir = os.path.join(os.path.dirname(__file__), "..", "schemas")
+    schema_path = os.path.join(schemas_dir, schema_file)
     schema = load_json(schema_path)
     if not schema:
         return False
 
+    # Create a resolver for local file references
+    schema_uri = "file:///" + schemas_dir.replace("\\", "/") + "/"
+    resolver = jsonschema.RefResolver(base_uri=schema_uri, referrer=schema)
+
     try:
-        jsonschema.validate(instance=data, schema=schema)
+        jsonschema.validate(instance=data, schema=schema, resolver=resolver)
         return True
     except jsonschema.exceptions.ValidationError as e:
         print(f"\n[!] JSON Schema Validation Error in {schema_file}:")
         print(f"Path: {' -> '.join([str(p) for p in e.absolute_path])}")
         print(f"Error: {e.message}")
         return False
+    except Exception as e:
+        print(f"\n[ERROR] Unexpected validation error: {str(e)}")
+        return False
 
 def check_dangling_edges(graph_data, symbol_data):
-    nodes = {node["$id"] for node in graph_data.get("nodes", [])}
+    nodes = {node["id"] for node in graph_data.get("nodes", [])}
     
     # Symbols in symbol table should ideally be nodes too, but at least collect them
-    symbols = {symbol["$id"] for symbol in symbol_data.values()} if isinstance(symbol_data, dict) else set()
+    symbols = {symbol["id"] for symbol in symbol_data.values()} if isinstance(symbol_data, dict) else set()
     for symbol_list in symbol_data.values() if isinstance(symbol_data, dict) else []:
         # Handle dicts vs lists in symbol table according to schema if needed
         pass
