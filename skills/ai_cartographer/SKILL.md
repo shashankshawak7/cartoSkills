@@ -1,54 +1,45 @@
-# AI Code Cartographer Skill (All-Stack Universal Edition)
+# AI Code Cartographer Skill: Enterprise Audit Edition
 
-The **AI Code Cartographer** is the definitive engine for mapping the architectural and execution hierarchy of any enterprise codebase. It employs the **Universal Meta-Model (UCCS)** to unify diverse paradigms—Procedural, Object-Oriented, Scripting, and Batch Processing—into a high-fidelity Neo4j graph.
+The **AI Code Cartographer** is the definitive, client-facing engine for mapping the architectural and execution hierarchy of any enterprise codebase. It employs the **Universal Meta-Model (UCCS)** to unify diverse paradigms into a high-fidelity, strictly validated Neo4j graph suitable for executive modernization planning and compliance audits.
 
-## Core Capabilities
-1.  **Primitive-First Taxonomy**: Boils all language-specific constructs down to four universal labels: `:Container`, `:Structure`, `:Unit`, and `:Symbol`.
-2.  **Detect**: Identify the programming language of the target batch.
-3.  **Map**: Trigger the relevant **High-Precision Specialization Module** (e.g., `languages/java.md`, `languages/cobol.md`) to extract symbols according to UCCS standards.
-4.  **Cross-Reference**: Apply the URI ID policy (`lang://path#Symbol`) to link internal and cross-language calls.
-5.  **Multi-Paradigm Support**: Natively handles the "Infinite Stack"—COBOL, JCL, Progress 4GL, Delphi, .NET, Java, C/C++, Rust, HTML, CSS, TypeScript, SQL, and Shell—with absolute structural precision.
-6.  **Cross-Paradigm Resolution**:
-    - **Procedural (COBOL/C/4GL)**: Maps Paragraphs/Sections/Procedures as `:Unit` nodes.
-    - **Batch (JCL)**: Maps Jobs as `:Container` and Steps as `:Unit`.
-    - **Systems (C++/Go)**: Maps Templates, Namespaces, and Embedding as structural relationships.
-    - **Modern (JS/.NET)**: Maps Closures, Prototypes, and Async Triggers.
-3.  **Absolute ID Uniqueness**: Mandates a URI-based stable ID format (`lang://path/to/file#SymbolPath`) for zero collisions in polyglot projects.
-4.  **Zero-Dangling-Edge Mandate**: Every reference target must be instantiated as a node (Internal or External).
-5.  **Implicit Entry Point Detection**: Automatically identifies execution blocks outside named functions (Shell, COBOL, Python) and maps them as entry-point `:Units`.
+---
 
-## Universal Taxonomy (UCCS)
+## 🛡️ Enterprise Core Capabilities & Mandatory Guardrails
+1.  **Absolute Proprietary Taxonomy**: Enforce strict reduction of all languages into exactly six primitives (`:Container`, `:Structure`, `:Unit`, `:Symbol`, `:Annotation`, `:External`). **No custom or hallucinated labels are permitted.**
+2.  **Zero Hallucination Protocol**:
+    - Do not invent dependencies. If a dynamic or reflective `CALL` obscures the target, map it strictly as `[:UNKNOWN_RELATION]` rather than guessing the target class.
+    - If a file cannot be fully parsed due to complexity or obfuscation, immediately flag the parent `:Container` node with `"audit_status": "MANUAL_REVIEW_REQUIRED"`.
+3.  **Enterprise URI ID Protocol (`lang://path#Symbol`)**: Every single Node ID must be mathematically deduplicable. Inconsistencies will corrupt the executive dataset.
+4.  **Zero-Dangling-Edge Mandate**: Every unique reference target MUST be instantiated as an actual node. If external, use `:External`. 
+5.  **Unobtrusive Code Scanning**: Treat the source code as absolute Ground-Truth. The engine must extract reality, not an idealized version of the code.
 
-| Category | Constructs (Full Matrix) |
+---
+
+## 🛠️ Universal Taxonomy Matrix (UCCS)
+
+| Enterprise Category | Applicable Code Paradigms (Strict Enforcement) |
 | :--- | :--- |
-| **:Container** | Folder, File, Namespace, Package, Module, **COBOL Program**, **JCL Job**, **Delphi Unit**. |
-| **:Structure** | Class, Struct, Interface, Trait, Enum, **COBOL Section**, **Progress 4GL Temp-Table**, **C++ Template**. |
-| **:Unit** | Method, Function, Lambda, **COBOL Paragraph**, **JCL Step**, **Shell Command**, **SQL Procedure**. |
-| **:Symbol** | Field, Property, Variable, Constant, **COBOL Data Item**, **JCL DD Statement**, **CSS Selector**. |
-| **:Annotation** | Decorator, Attribute, Macro, Metadata, Pragma, **JS JSDoc**. |
-| **:External** | Any symbol residing in an external library, DLL, Copybook, or CDN. |
+| **:Container** | Folder, File, Namespace, Package, Module, COBOL Program, JCL Job, Delphi Unit. |
+| **:Structure** | Class, Struct, Interface, Trait, Enum, COBOL Section, P4GL Temp-Table, C++ Template. |
+| **:Unit** | Method, Function, Lambda, COBOL Paragraph, JCL Step, Shell Command, PL/SQL Procedure. |
+| **:Symbol** | Field, Property, Variable, Constant, COBOL Data Item, CSS Selector. |
+| **:Annotation** | Decorator, Attribute, Macro, Metadata, Pragma, JS JSDoc. |
+| **:External** | SaaS dependencies, imported third-party SDKs, CDN assets, unsourced DLLs. |
 
-## Operational Protocol
+---
+
+## 🕹️ Operational Protocol (Enterprise Audit Workflow)
 
 ### 1. Initialization
-Run `init_project.py` to seed `status.json`.
-Initialize the base graph with URI-compliant `:Container` nodes for the directory structure.
+Run `init_project.py` to establish the environment and strictly validate `status.json`. The baseline graph must explicitly feature URI-validated `:Container` nodes for the directory structure.
 
-### 2. Recursive Parsing Loop
-1.  **Analyze**: Use the **All-Stack Playbook** (parser_worker.md) to extract meta-model primitives.
-2.  **Validate**: Trigger the **Structural Validator Skill** for Case Audit and ID consistency. 
-3.  **Integrate**: Merge JSON if validation PASSED.
-4.  **Loop**: Output "CONTINUE" until `status.json` is 100%.
+### 2. Recursive Parsing & Validation Loop
+1.  **Extract**: Utilize the **Enterprise Parser Worker** to extract UCCS meta-model primitives.
+2.  **Validate**: Pass all output into the **Enterprise Quality Validator Skill** to enforce URI constraints, schema validity, and risk-tagging.
+3.  **Merge**: Only successfully validated JSON payloads are merged.
+4.  **Enforce**: If validation fails, force parser self-correction. Loop until `status.json` resolves to 100%.
 
-## JSON Schema (Neo4j)
+---
 
-### Node Properties
-- `id`: `lang://relative_path#FQN(Signature)`
-- `label`: UCCS Label (e.g., `:Unit`)
-- `properties`: {name, fqn, line, lang, abstract, entry_point}
-
-### Edge Types
-- `[:CONTAINS]`, `[:CALLS]`, `[:EXTENDS]`, `[:IMPLEMENTS]`, `[:USES]`, `[:DECORATES]`, `[:TRIGGERS]`.
-
-## Self-Prompting Instruction
-"Parser Progress: [X/Y] files. All-Stack Meta-Model synchronized."
+## 🧠 Architectural Risk Tagging
+During abstraction, if the Cartographer detects "High Cyclomatic Complexity" (massive functions) or "God Classes," it must append the property `"architectural_risk": "HIGH"` directly to the Node's JSON metadata to flag it for the modernization pipeline.
