@@ -1,0 +1,63 @@
+# IRMapper Gold Data Template (V1.1 - Gap-Closer Edition)
+project: "[PROJECT_NAME]"
+project_path: "[ABSOLUTE_PROJECT_PATH]"
+modules:
+  - name: "[MODULE_NAME]"
+    path: "[MODULE_PATH]"
+    files:
+      - name: "[FILE_NAME]"
+        path: "[FILE_PATH]"
+        imports:
+          - "[IMPORT_1]"
+          - "[IMPORT_2]"
+        global_variables:
+          - name: "[VAR_NAME]"
+            type: "[VAR_TYPE]"
+            value: "[VAR_VALUE]"
+        classes:
+          - name: "[CLASS_NAME]"
+            inheritance:
+              base_classes: ["[BASE_1]", "[BASE_2]"]
+              interfaces: ["[IFACE_1]", "[IFACE_2]"]
+              mro_sequence: ["[CLASS_NAME]", "[BASE_1]", "[BASE_2]", "object"]
+              overrides:
+                - method: "[METHOD_NAME]"
+                  base_source: "[BASE_CLASS_URI]"
+                  override_type: "[EXTENDS/IMPLEMENTS/REPLACES]"
+            parameters:
+              - name: "[PARAM_NAME]"
+                type: "[PARAM_TYPE]"
+                default: "[PARAM_DEFAULT]"
+            methods:
+              - name: "[METHOD_NAME]"
+                signature: "[METHOD_SIGNATURE]"
+                meta_annotations:
+                  - name: "[DECORATOR/ATTRIBUTE_NAME]"
+                    parameters: { "[KEY]": "[VALUE]" }
+                logic_context_shadow:
+                  async_tracing: [true/false]
+                  side_effects: ["[SIDE_EFFECT_1]"]
+                  captured_scope:
+                    - name: "[VAR_FROM_PARENT_SCOPE]"
+                      type: "[VAR_TYPE]"
+                resource_lifecycle:
+                  destructor_logic: "[CLEANUP_STMT]"
+                  memory_protocol: "[MANUAL/GC/RC]"
+                parameters:
+                  - name: "[PARAM_NAME]"
+                    type: "[PARAM_TYPE]"
+                statements:
+                  - index: 1
+                    type: "[if/while/call/assignment/paragraph_anchor/job_step]"
+                    content: "[STMT_CONTENT]"
+                    nesting_level: 0
+                    dynamic_resolution:
+                      is_dynamic: [true/false]
+                      heuristic_intent: "[EXPLANATION]"
+                    child_statements:
+                      - index: [NESTED_INDEX]
+                        type: "[NESTED_STMT_TYPE]"
+                        content: "[NESTED_CONTENT]"
+                        nesting_level: 1
+---
+# IRMAPPER_GOLD_V1.1_CHECKSUM: [GENERATED_CHECKSUM]

@@ -1,0 +1,44 @@
+# IRMapper Gold Data Audit (V1.0)
+project: "SKILLaI"
+project_path: "c:/Users/shash/OneDrive_x/Desktop/SKILLaI"
+modules:
+  - name: "config"
+    path: "config"
+    files:
+      - name: "ignore_map.json"
+        path: "config/ignore_map.json"
+        imports: []
+        global_variables:
+          - name: "IGNORE_MAP"
+            type: "dict"
+            value: "Full JSON Registry"
+        classes: []
+        methods: []
+        data_nodes:
+          - key: "global"
+            description: "Cross-platform version control and IDE artifacts"
+            values:
+              directories: [".git", ".svn", ".hg", ".idea", ".vscode", ".settings", ".devcontainer", ".github", ".mvn", ".gradle"]
+              files: [".gitignore", ".DS_Store", "package-lock.json", "yarn.lock", "poetry.lock", "pom.xml.releaseBackup", "status.json", "graph.json", "project_tree.json", "symbol_table.json", "documentation_status.json"]
+          - key: "python"
+            description: "Python-specific virtual environments and build artifacts"
+            values:
+              directories: ["__pycache__", "venv", ".venv", ".tox", ".pytest_cache", ".mypy_cache", "dist", "build", "nosetests"]
+              files: ["*.pyc", "*.pyo", "*.pyd", ".python-version", "pip-log.txt"]
+          - key: "nodejs"
+            description: "Node.js dependencies and compilation targets"
+            values:
+              directories: ["node_modules", "dist", "build", "out", ".next", ".nuxt", ".cache"]
+              files: ["npm-debug.log", "yarn-debug.log", "yarn-error.log"]
+          - key: "java"
+            description: "Java build tools and binary output"
+            values:
+              directories: ["target", "build", "bin", "out", ".gradle", ".m2"]
+              files: ["*.class", "*.jar", "*.war", "*.ear"]
+          - key: "csharp"
+            description: ".NET/C# build artifacts and executables"
+            values:
+              directories: ["bin", "obj", ".vs", "TestResults"]
+              files: ["*.exe", "*.dll", "*.pdb", "*.suo"]
+---
+# IRMapper_GOLD_V1.0_CHECKSUM: AUDIT_SIG_MODERN_V1_IGNORE_MAP_JSON

@@ -43,7 +43,7 @@ Every audit archive produced by the engine must contain the following 23 section
 18. 📖 **Reference Manifest & Artifact Links**
 19. 🧩 **Procedural Summary (Surgical Deconstruction)**
 20. 🧬 **Architectural Justification (Reverse Engineered)**
-21. 🚀 **Modernization & Migration Roadmap**
+21. 🚀 **IRMapper & Migration Roadmap**
 22. 📊 **Visual Engineering (Mermaid Diagrams)**
 23. 🔏 **System Integrity Checksum (Final Audit)**
 
@@ -52,11 +52,21 @@ Every audit archive produced by the engine must contain the following 23 section
 ## 📂 Initialization Orchestration
 Before initiating an audit, run the following commands to synchronize the trackers:
 ```powershell
+
+# Initialize all at once
+python init_pipeline.py <PROJECT_PATH>
+
 # Step 1: Initialize the Cartography Tracker
 python .\scripts\init_project.py <PROJECT_PATH>
 
 # Step 2: Initialize the Documentation Seeder
 python .\scripts\init_documentation.py <PROJECT_PATH>
+
+# Step 2: Initialize the IRMapper Seeder
+python .\scripts\init_irmapper.py <PROJECT_PATH>
+
+# Step 2: Initialize the Modernization Seeder
+python .\scripts\init_modernization.py <PROJECT_PATH>
 ```
 
 ### ⚙️ Clinical Pruning (`config/ignore_map.json`)
@@ -97,4 +107,30 @@ Act as the **Universal Code Cartographer Manager**. Your mission is to autonomou
 3. **Protocol Adherence**: Strictly follow the **Zero-Hallucination Protocol** and the **Architectural Risk Tagging** mandate from "SKILL.md". Use the **Enterprise Parser Worker** for extraction.
 4. **Persistence**: Continue this loop until every entry in "results/status.json" has "status": "COMPLETED" and the final graph is merged into "results/graph.json".
 Start now by mapping the core entry points and the first batch of pending files.
+```
+## Trigger IR Mapper
+```sh
+Act as the Universal IRMapper Manager. Your mission is to autonomously generate a high-fidelity IRMapper Gold Data Archive (V1.1) for the entire project.
+
+Zero-Touch Execution: Do not stop to ask for feedback, approval, or implementation plans.
+Recursive Logic Auditing: Iterate through results/irmapper_status.json. For every file where logic_mapped is false:
+Perform an Instruction-Level Forensic Audit using the Universal IRMapper Template (V1.1) from skills/irmapper_skill/template.yaml.
+Generate a corresponding .yaml archive in the irmapper/ shadow root (maintaining 1:1 directory symmetry).
+Resolve all cross-language gaps (Closures, MRO, Pointers, Paragraphs, Job Steps, etc.) as mandated by the V1.1 standard.
+Protocol Adherence: Strictly follow the Principal IRMapper Architect persona from prompts/irmapper_worker.md and the Gold Standard for Logic Deconstruction from skills/irmapper_skill/SKILL.md.
+Persistence: Continue this loop until every entry in results/irmapper_status.json is marked logic_mapped: true.
+```
+## Trigger Modernizer
+```sh 
+Act as the Universal Digital Modernizer Manager. Your mission is to autonomously generate high-fidelity, Enterprise-Hardened Source Code (v2.0) and Thorough Test Suites for the entire project.
+
+Zero-Touch Execution: Do not stop to ask for feedback, approval, or implementation plans.
+Recursive Modernization: Iterate through results/irmapper_status.json. For every file where mapped is true:
+Perform a Software Rebirth using the Universal Transformation Standard (v2.0) from skills/digital_modernizer/SKILL.md.
+Apply the Hardened Blueprint (e.g., Spring Boot, NestJS, Next.js, .NET MVC) from skills/digital_modernizer/blueprints/ based on the requested target stack.
+Generate functionally equivalent source code, thorough unit tests (JUnit, Vitest, Jest, xUnit), and matching build manifests (pom.xml, package.json, .csproj).
+Enforce 1:1 Logic Parity between the IRMapper statements trace and the new modern implementation.
+Protocol Adherence: Strictly follow the Senior Digital Transformation Architect persona from prompts/modernizer_worker.md and the Enterprise-Grade Blueprint Schema from skills/digital_modernizer/blueprints/SCHEMA.md.
+Persistence: Continue this loop until every target legacy artifact is transformed into a robust, tested, and validated modern source module.
+Start now by modernizing the first batch of core business logic files into the [TARGET_STACK].
 ```

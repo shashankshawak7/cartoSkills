@@ -1,0 +1,46 @@
+# IRMapper Gold Data Audit (V1.1 - Gap-Closer Edition)
+project: "SKILLaI"
+project_path: "c:/Users/shash/OneDrive_x/Desktop/SKILLaI"
+modules:
+  - name: "legacy"
+    path: "legacy"
+    files:
+      - name: "ORDER_ENTRY.xml"
+        path: "legacy/ORDER_ENTRY.xml"
+        language_family: "Oracle Forms (XML)"
+        global_structures:
+          - name: "BLK_ORDERS"
+            type: "DATA_BLOCK"
+            items:
+              - name: "ORDER_ID"
+                type: "NUMBER"
+              - name: "CUST_ID"
+                type: "NUMBER"
+              - name: "ORDER_TOTAL"
+                type: "NUMBER"
+        methods:
+          - name: "WHEN-BUTTON-PRESSED"
+            signature: "ITEM_TRIGGER: BTN_PROCESS"
+            logic_context_shadow:
+              side_effects: ["Modifies ORDER_TOTAL", "Triggers MESSAGE"]
+              async_tracing: false
+            statements:
+              - index: 1
+                type: "assignment"
+                content: ":BLK_ORDERS.ORDER_TOTAL := :BLK_ORDERS.ORDER_TOTAL + 100.50"
+                nesting_level: 1
+              - index: 2
+                type: "if"
+                content: "IF :BLK_ORDERS.ORDER_TOTAL > 1000 THEN"
+                nesting_level: 1
+                child_statements:
+                  - index: 3
+                    type: "call"
+                    content: "MESSAGE('High Value Order')"
+                    nesting_level: 2
+              - index: 4
+                type: "call"
+                content: "LOG_PROCESS(:BLK_ORDERS.ORDER_ID)"
+                nesting_level: 1
+---
+# IRMAPPER_GOLD_V1.1_CHECKSUM: AUDIT_SIG_MODERN_V1.1_ORDER_ENTRY_XML

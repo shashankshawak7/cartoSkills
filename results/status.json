@@ -1,0 +1,554 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "config\\ignore_map.json",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "documentation\\config\\ignore_map.json.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "documentation.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "init_pipeline.py",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "irmapper\\config\\ignore_map.json.yaml",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "irmapper\\documentation.md.yaml",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "irmapper\\legacy\\ORDER_ENTRY.xml.yaml",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "irmapper\\legacy\\UMyManager.pas.yaml",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "irmapper\\legacy\\order_manager.cls.yaml",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "irmapper\\scripts\\init_project.py.yaml",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "irmapper\\scripts\\utils.py.yaml",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "legacy\\ORDER_ENTRY.xml",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "legacy\\UMyManager.pas",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "legacy\\order_manager.cls",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "prompts\\documentor_worker.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "prompts\\irmapper_worker.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "prompts\\manager.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "prompts\\modernizer_worker.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "prompts\\parser_worker.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "schemas\\edge.schema.json",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "schemas\\graph.schema.json",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "schemas\\node.schema.json",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "schemas\\symbol_table.schema.json",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "scripts\\init_documentation.py",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "scripts\\init_irmapper.py",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "scripts\\init_modernizer.py",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "scripts\\init_project.py",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "scripts\\modernizer_orchestrator.py",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "scripts\\utils.py",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "scripts\\validate_graph.py",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\SKILL.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\c_cpp.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\cobol.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\delphi.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\dotnet.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\go.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\java.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\jcl.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\oracle_forms.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\php.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\progress4gl.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\python.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\ruby.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\rust.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\shell.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\sql.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\vb_vba.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\web_logic.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\languages\\web_ui.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\ai_cartographer\\validator.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\SKILL.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\SCHEMA.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\backend\\django_rest_framework.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\backend\\dotnet_core_clean.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\backend\\fastapi_async.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\backend\\go_gin_echo.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\backend\\laravel_modern.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\backend\\micronaut.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\backend\\nestjs_modular.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\backend\\play_framework.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\backend\\quarkus_native.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\backend\\ruby_on_rails.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\backend\\rust_axum.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\backend\\spring_boot_microservices.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\backend\\vertx_reactive.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\frontend\\angular_enterprise.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\frontend\\blazor_wasm.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\frontend\\dotnet_mvc_razor.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\frontend\\react_enterprise_ts.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\frontend\\vue_nuxt.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\fullstack\\nextjs_fullstack.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\digital_modernizer\\blueprints\\mobile\\flutter_clean.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\irmapper_skill\\SKILL.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\irmapper_skill\\template.yaml",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\retro_documentor\\SKILL.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "skills\\retro_documentor\\template.md",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "tmp_modernize_step.py",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    }
+  ],
+  "global_symbols": [],
+  "total_files": 78,
+  "completed_files": 0,
+  "root_dir": "C:\\Users\\shash\\OneDrive_x\\Desktop\\SKILLaI"
+}

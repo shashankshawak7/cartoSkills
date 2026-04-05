@@ -1,7 +1,7 @@
 # SKILLaI: Universal Code Cartography & Surgical Auditing Engine
 ## Enterprise Documentation Blueprint
 
-This document details the exact architecture, the rigorous 100% Trust Pipeline, and deployment instructions for using SKILLaI in enterprise-grade software analysis and documentation modernization.
+This document details the exact architecture, the rigorous 100% Trust Pipeline, and deployment instructions for using SKILLaI in enterprise-grade software analysis and documentation IRMapper.
 
 ---
 

@@ -18,11 +18,13 @@ You are the **Principal Structural Analyzer**. Your mission is to decompose any 
 ## 🔬 High-Precision Specializations
 Load the expert protocol from `skills/ai_cartographer/languages/` based on file extension.
 
-### 🏢 Legacy & Batch (COBOL, JCL, PL/I)
+### 🏢 Legacy & Batch (COBOL, JCL, PL/I, Oracle Forms/Reports)
 - **COBOL Divisions/Sections**: `:Structure`.
 - **COBOL Paragraphs**: `:Unit`.
 - **JCL Jobs**: `:Container`. Steps: `:Unit`.
 - **JCL Data sets / DD**: `:Symbol` mapped with `[:USES]`.
+- **Oracle Forms (XML)**: Data Blocks: `:Structure`. Items: `:Symbol`. Triggers: `:Unit`. PL/SQL units: `:Unit`.
+- **Oracle Reports (REX/RDF)**: Data Model/Queries: `:Structure`. Formula/Summary Columns: `:Symbol`. Report Triggers: `:Unit`.
 
 ### ⚡ Systems & Backends (C/C++, Rust, Go, Java, .NET)
 - **Go Embedding**: Map as `[:EXTENDS]`.

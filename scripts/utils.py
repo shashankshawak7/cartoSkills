@@ -4,7 +4,8 @@ import json
 SUPPORTED_EXTENSIONS = [
     ".java", ".cbl", ".jcl", ".p", ".cls", ".ts", ".tsx", ".js", ".jsx", 
     ".c", ".cpp", ".h", ".cs", ".py", ".go", ".rs", ".rb", ".php", 
-    ".sh", ".sql", ".pas", ".yaml", ".yml", ".md", ".json", ".txt", ".html", ".css"
+    ".sh", ".sql", ".pas", ".yaml", ".yml", ".md", ".json", ".txt", ".html", ".css",
+    ".xml", ".rex", ".rdf"
 ]
 
 def load_ignore_map():

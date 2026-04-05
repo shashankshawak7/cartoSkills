@@ -1,0 +1,250 @@
+# IRMapper Gold Data Audit (V1.1 - Gap-Closer Edition)
+project: "SKILLaI"
+project_path: "c:/Users/shash/OneDrive_x/Desktop/SKILLaI"
+modules:
+  - name: "scripts"
+    path: "scripts"
+    files:
+      - name: "init_project.py"
+        path: "scripts/init_project.py"
+        imports:
+          - "os"
+          - "json"
+          - "utils.load_ignore_map"
+          - "utils.should_skip"
+          - "utils.SUPPORTED_EXTENSIONS"
+        global_variables: []
+        classes: []
+        methods:
+          - name: "get_project_tree"
+            signature: "get_project_tree(target_dir='.') -> dict"
+            parameters:
+              - name: "target_dir"
+                type: "str"
+                default: "."
+            logic_context_shadow:
+              side_effects: ["none"]
+              captured_scope:
+                - name: "ignore_map"
+                  type: "dict"
+            statements:
+              - index: 1
+                type: "assignment"
+                content: "ignore_map = load_ignore_map()"
+                nesting_level: 0
+              - index: 2
+                type: "def"
+                content: "def build_tree(path)"
+                nesting_level: 0
+                child_statements:
+                  - index: 3
+                    type: "assignment"
+                    content: "name = os.path.basename(path)"
+                    nesting_level: 1
+                  - index: 4
+                    type: "if"
+                    content: "if not name"
+                    nesting_level: 1
+                    child_statements:
+                      - index: 5
+                        type: "assignment"
+                        content: "name = 'root'"
+                        nesting_level: 2
+                  - index: 6
+                    type: "assignment"
+                    content: "is_dir = os.path.isdir(path)"
+                    nesting_level: 1
+                  - index: 7
+                    type: "if"
+                    content: "if should_skip(path, name, is_dir, ignore_map)"
+                    nesting_level: 1
+                    child_statements:
+                      - index: 8
+                        type: "return"
+                        content: "return None"
+                        nesting_level: 2
+                  - index: 9
+                    type: "assignment"
+                    content: "node = { 'name': name, 'path': ..., 'type': 'folder', 'children': [] }"
+                    nesting_level: 1
+                  - index: 10
+                    type: "try"
+                    content: "try block start"
+                    nesting_level: 1
+                    child_statements:
+                      - index: 11
+                        type: "assignment"
+                        content: "items = os.listdir(path)"
+                        nesting_level: 2
+                  - index: 12
+                    type: "except"
+                    content: "except PermissionError"
+                    nesting_level: 1
+                    child_statements:
+                      - index: 13
+                        type: "return"
+                        content: "return None"
+                        nesting_level: 2
+                  - index: 14
+                    type: "for"
+                    content: "for item in sorted(items)"
+                    nesting_level: 1
+                    child_statements:
+                      - index: 15
+                        type: "assignment"
+                        content: "full_path = os.path.join(path, item)"
+                        nesting_level: 2
+                      - index: 16
+                        type: "assignment"
+                        content: "child_is_dir = os.path.isdir(full_path)"
+                        nesting_level: 2
+                      - index: 17
+                        type: "if"
+                        content: "if should_skip(full_path, item, child_is_dir, ignore_map)"
+                        nesting_level: 2
+                        child_statements:
+                          - index: 18
+                            type: "continue"
+                            content: "continue"
+                            nesting_level: 3
+                      - index: 19
+                        type: "if"
+                        content: "if child_is_dir"
+                        nesting_level: 2
+                        child_statements:
+                          - index: 20
+                            type: "assignment"
+                            content: "child = build_tree(full_path)"
+                            nesting_level: 3
+                          - index: 21
+                            type: "if"
+                            content: "if child"
+                            nesting_level: 3
+                            child_statements:
+                              - index: 22
+                                type: "call"
+                                content: "node['children'].append(child)"
+                                nesting_level: 4
+                      - index: 23
+                        type: "else"
+                        content: "else (file handling)"
+                        nesting_level: 2
+                        child_statements:
+                          - index: 24
+                            type: "if"
+                            content: "if any(item.endswith(ext) for ext in SUPPORTED_EXTENSIONS)"
+                            nesting_level: 3
+                            child_statements:
+                              - index: 25
+                                type: "call"
+                                content: "node['children'].append({ 'name': item, ... })"
+                                nesting_level: 4
+                  - index: 26
+                    type: "return"
+                    content: "return node"
+                    nesting_level: 1
+              - index: 27
+                type: "return"
+                content: "return build_tree(target_dir)"
+                nesting_level: 0
+          - name: "init_project"
+            signature: "init_project(target_dir='.') -> None"
+            parameters:
+              - name: "target_dir"
+                type: "str"
+                default: "."
+            logic_context_shadow:
+              side_effects: ["writes results/", "writes results/status.json", "writes results/graph.json", "writes results/symbol_table.json"]
+              captured_scope:
+                - name: "tree"
+                  type: "dict"
+                - name: "files_to_process"
+                  type: "list[dict]"
+            statements:
+              - index: 1
+                type: "if"
+                content: "if not os.path.exists('results')"
+                nesting_level: 0
+                child_statements:
+                  - index: 2
+                    type: "call"
+                    content: "os.makedirs('results')"
+                    nesting_level: 1
+              - index: 3
+                type: "assignment"
+                content: "tree = get_project_tree(target_dir)"
+                nesting_level: 0
+              - index: 4
+                type: "with"
+                content: "with open('results/project_tree.json', 'w') as f"
+                nesting_level: 0
+                child_statements:
+                  - index: 5
+                    type: "call"
+                    content: "json.dump(tree, f, indent=2)"
+                    nesting_level: 1
+              - index: 6
+                type: "assignment"
+                content: "files_to_process = []"
+                nesting_level: 0
+              - index: 7
+                type: "def"
+                content: "def flat_files(node)"
+                nesting_level: 0
+                child_statements:
+                  - index: 8
+                    type: "if"
+                    content: "if node['type'] == 'file'"
+                    nesting_level: 1
+                    child_statements:
+                      - index: 9
+                        type: "call"
+                        content: "files_to_process.append({ ... })"
+                        nesting_level: 2
+                  - index: 10
+                    type: "elif"
+                    content: "elif 'children' in node"
+                    nesting_level: 1
+                    child_statements:
+                      - index: 11
+                        type: "for"
+                        content: "for child in node['children']"
+                        nesting_level: 2
+                        child_statements:
+                          - index: 12
+                            type: "call"
+                            content: "flat_files(child)"
+                            nesting_level: 3
+              - index: 13
+                type: "call"
+                content: "flat_files(tree)"
+                nesting_level: 0
+              - index: 14
+                type: "assignment"
+                content: "status = { 'files': files_to_process, ... }"
+                nesting_level: 0
+              - index: 15
+                type: "with"
+                content: "with open('results/status.json', 'w') as f"
+                nesting_level: 0
+                child_statements:
+                  - index: 16
+                    type: "call"
+                    content: "json.dump(status, f, indent=2)"
+                    nesting_level: 1
+              - index: 17
+                type: "if"
+                content: "if not os.path.exists('results/graph.json')"
+                nesting_level: 0
+                child_statements:
+                  - index: 18
+                    type: "with"
+                    content: "with open('results/graph.json', 'w') as f"
+                    nesting_level: 1
+                    child_statements:
+                      - index: 19
+                        type: "call"
+                        content: "json.dump({ 'nodes': [], ... }, f, indent=2)"
+                        nesting_level: 2
+---
+# IRMapper_GOLD_V1.1_CHECKSUM: AUDIT_SIG_MODERN_V1.1_INIT_PROJECT_PY

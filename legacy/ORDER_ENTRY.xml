@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORM_MODULE name="ORDER_ENTRY">
+  <DATA_BLOCK name="BLK_ORDERS">
+    <DATA_BLOCK_ITEM name="ORDER_ID" datatype="NUMBER" />
+    <DATA_BLOCK_ITEM name="CUST_ID" datatype="NUMBER" />
+    <DATA_BLOCK_ITEM name="ORDER_TOTAL" datatype="NUMBER" />
+    <ITEM_TRIGGER name="WHEN-BUTTON-PRESSED" target="BTN_PROCESS">
+      <PLSQL_BLOCK>
+        BEGIN
+          :BLK_ORDERS.ORDER_TOTAL := :BLK_ORDERS.ORDER_TOTAL + 100.50;
+          IF :BLK_ORDERS.ORDER_TOTAL > 1000 THEN
+            MESSAGE('High Value Order');
+          END IF;
+          LOG_PROCESS(:BLK_ORDERS.ORDER_ID);
+        END;
+      </PLSQL_BLOCK>
+    </ITEM_TRIGGER>
+  </DATA_BLOCK>
+</FORM_MODULE>
