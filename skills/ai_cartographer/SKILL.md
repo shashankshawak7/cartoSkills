@@ -36,9 +36,10 @@ The **AI Code Cartographer** is the definitive, client-facing engine for mapping
 
 ## 🏗️ Shadow Root Isolation
 All mapping artifacts must follow the **Universal Project Mirror Protocol**:
-- **Project Context**: `[PROJECT_NAME]`
-- **Graph Metadata**: `results/graph.json` (includes `project_name` key).
-- **Extraction Path**: `[PROJECT_NAME]://[FILE_PATH]`
+- **Project Context**: `project_name`
+- **Absolute Source Path**: `project_path` (Absolute path to the source root, provided in all status JSONs).
+- **Graph Metadata**: `results/graph.json` (includes `project_name` and `project_path` keys).
+- **Extraction Path**: `[project_name]://[FILE_PATH]`
 
 ## 🕹️ Operational Protocol (Enterprise Audit Workflow)
 

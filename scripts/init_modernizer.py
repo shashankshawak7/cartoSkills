@@ -54,6 +54,7 @@ def init_modernization_status(project_root):
 
     output_data = {
         "project_name": project_name,
+        "project_path": project_abs_path,
         "files": modernization_status
     }
 

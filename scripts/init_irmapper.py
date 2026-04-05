@@ -36,6 +36,7 @@ def init_irmapper(project_root):
 
     output_data = {
         "project_name": project_name,
+        "project_path": project_abs_path,
         "files": irmapper_status
     }
 

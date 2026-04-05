@@ -45,6 +45,7 @@ def init_documentation_status(project_root, output_json):
 
     output_data = {
         "project_name": project_name,
+        "project_path": project_abs_path,
         "files": status
     }
 

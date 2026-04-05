@@ -59,7 +59,11 @@ def init_project(target_dir="."):
         
     tree = get_project_tree(target_abs_path)
     # Add project metadata to the tree
-    tree["project_name"] = project_name
+    tree = {
+        "project_name": project_name,
+        "project_path": target_abs_path,
+        **tree
+    }
     
     with open("results/project_tree.json", "w") as f:
         json.dump(tree, f, indent=2)
@@ -82,11 +86,11 @@ def init_project(target_dir="."):
     
     status = {
         "project_name": project_name,
+        "project_path": target_abs_path,
         "files": files_to_process,
         "global_symbols": [],
         "total_files": len(files_to_process),
-        "completed_files": 0,
-        "root_dir": target_abs_path
+        "completed_files": 0
     }
     
     with open("results/status.json", "w") as f:
@@ -100,13 +104,17 @@ def init_project(target_dir="."):
                 "metadata": {
                     "version": "4.0.0",
                     "status": "CLEAN",
-                    "project_name": project_name
+                    "project_name": project_name,
+                    "project_path": target_abs_path
                 }
             }, f, indent=2)
             
     if not os.path.exists("results/symbol_table.json"):
         with open("results/symbol_table.json", "w") as f:
-            json.dump({"project_name": project_name}, f, indent=2)
+            json.dump({
+                "project_name": project_name,
+                "project_path": target_abs_path
+            }, f, indent=2)
 
     print(f"Project '{project_name}' initialized.")
     print(f"Project Tree saved to results/project_tree.json")
