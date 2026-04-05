@@ -18,17 +18,7 @@ The **Universal Retro-Documentation Engine** is a high-performance auditing suit
 
 ---
 
-## 🧠 Master Operational Prompts (LLM-Optimized)
 
-### A. To Trigger the AI Cartographer
-**Use this prompt for strategic architectural mapping.**
-> "Activate the **AI Cartographer**. Perform a systemic sweep of the `results/status.json` file list. Identify all class relationships, service orchestrations, and data-flow call-chains. Update `results/graph.json` and `results/symbol_table.json` with 100% architectural parity. Construct a high-level `README.md` in the `documentation/` root summarizing the project's macro-topology."
-
-### B. To Trigger the Surgical Documentor
-**Use this prompt for exhaustive, 1:1 tactical auditing.**
-> "Switch to the **Surgical Documentor**. Mirror the project source structure in the `documentation/` folder. For every file in the tracker, generate a **Surgical Archive** following the **Absolute 1-23 Standard**. Enforce a 'Logical Branching Matrix' for every method and include professional Mermaid diagrams for class interactions. No placeholders, no summarization, zero-omission auditing only."
-
----
 
 ## 📏 The Absolute 1-23 Surgical Standard
 Every audit archive produced by the engine must contain the following 23 sections to ensure systemic compliance:
@@ -82,3 +72,29 @@ The engine uses a centralized **Ignore Map** to strictly exclude environmental n
 - `documentation/`: The **Shadow Root** for all generated surgical archives.
 - `results/`: JSON-based graph data and symbol tables for systemic analysis.
 - `prompts/`: Master worker personas for consistent LLM execution.
+
+## trigger retro documentor
+```sh
+Act as the **Universal Retro Documentor Manager**. Your mission is to autonomously generate a high-fidelity **Enterprise Surgical Archive** for the entire project. 
+1. **Zero-Touch Execution**: Do not stop to ask for feedback, approval, or implementation plans. 
+2. **Recursive Auditing**: Iterate through "results/documentation_status.json". For every file where 'documented' is 'false':
+   - Perform a **Surgical Dissection** using the **Absolute 1-23 Standard** from "template.md".
+   - Generate a corresponding ".md" archive in the "documentation/" shadow root (maintaining 1:1 directory symmetry).
+   - Generate a "README.md" for every directory and the project root that synthesizes the 23 sections for that scope.
+3. **Protocol Adherence**: Strictly follow the **Principal Systems Auditor** persona from "documentor_worker.md" and the **Surgical Dissection Standard** from "SKILL.md".
+4. **Persistence**: Continue this loop until every entry in "results/documentation_status.json" is marked 'documented: true'. 
+Start now by documenting the Project Root and the first batch of pending files.
+```
+
+##trigger carotgrapher
+```sh
+Act as the **Universal Code Cartographer Manager**. Your mission is to autonomously map the architectural and execution hierarchy of the entire project into a high-fidelity Neo4j-ready meta-model.
+1. **Zero-Touch Execution**: Do not stop to ask for feedback, approval, or implementation plans. 
+2. **Recursive Mapping**: Iterate through "results/mapping_status.json". For every file where 'mapped' is 'false':
+   - Perform a **Structural Extraction** using the **Universal Meta-Model (UCCS)** from "SKILL.md".
+   - Enforce the **Enterprise URI ID Protocol** (`lang://path#Symbol`) for every node.
+   - Generate a valid JSON payload for every successfully parsed `:Container`, `:Structure`, and `:Unit`.
+3. **Protocol Adherence**: Strictly follow the **Zero-Hallucination Protocol** and the **Architectural Risk Tagging** mandate from "SKILL.md". Use the **Enterprise Parser Worker** for extraction.
+4. **Persistence**: Continue this loop until every entry in "results/mapping_status.json" is marked 'mapped: true' and the final graph is merged into "results/graph.json".
+Start now by mapping the core entry points and the first batch of pending files.
+```

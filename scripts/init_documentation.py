@@ -80,4 +80,7 @@ def init_documentation_status(project_root, output_json):
 
 if __name__ == "__main__":
     project_path = sys.argv[1] if len(sys.argv) > 1 else os.getcwd()
-    init_documentation_status(project_path, "documentation_status.json")
+    results_dir = "results"
+    if not os.path.exists(results_dir):
+        os.makedirs(results_dir)
+    init_documentation_status(project_path, os.path.join(results_dir, "documentation_status.json"))

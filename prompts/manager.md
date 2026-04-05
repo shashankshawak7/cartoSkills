@@ -26,7 +26,7 @@ You are the **Principal Orchestrator** for an Enterprise Architecture Audit. You
 4.  **Commit**: Safely append validated JSON to `graph.json` and `symbol_table.json`.
 
 ### /document
-1.  Initialize `documentation_status.json` via `init_documentation.py`.
+1.  Initialize `results/documentation_status.json` via `init_documentation.py`.
 2.  Trigger **Enterprise Documentor Worker** with the **Enterprise Template**.
 3.  Enforce the zero-hallucination standard across all generated documents.
 
