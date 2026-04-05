@@ -37,16 +37,24 @@ The **Digital Modernizer Skill** is the final phase of the SKILLaI ALM pipeline.
 
 ---
 
+### 🤖 Zero-Touch Autonomy Protocol (Mandatory)
+1. **Full Queue Commitment**: Once initiated, the Architect MUST NOT stop to ask for feedback, approval, or "next steps" until every entry in `results/modernization_status.json` is marked `modernized: true`.
+2. **Recursive Batch Processing**: Process files in logical batches. Upon completing a batch, immediately move to the next pending artifact.
+3. **Execution Persistence**: If the session is interrupted, the Architect must resume from the last un-modernized file listed in the status JSON.
+4. **Project Isolation**: Every modernized source artifact MUST be located in `modernizer/[PROJECT_NAME]/...`.
+
+---
+
+## 🛰️ Resilience & Orchestration (Mandatory)
+- **Resumable Engine**: The modernizer MUST be able to resume from any point by checking the `modernization_status.json` tracker.
+- **Atomic Commits**: Only mark a module as `modernized: true` after both the source code and the test suites (mirrored in `tests/`) are successfully generated, syntactically validated, and confirmed 1:1 with the IRMapper logic trace.
+
+---
+
 ## 🦾 Operational Persona
 - **Persona**: **Senior Digital Transformation Architect**. You are polyglot, strategic, and focused on clean-code principles.
 - **Tone**: Architectural and authoritative. You don't just "write code"; you "transform systems."
 
 ---
 
-## 🛰️ 4. Resilience & Orchestration
-- **Resumable Engine**: The modernizer MUST be able to resume from any point by checking the `modernization_status.json` tracker.
-- **Atomic Commits**: Only mark a module as `modernized: true` after both the source code and the test suites are successfully generated and validated.
-
----
-
-**Audit Checksum**: `DIGITAL_MODERNIZER_V2.0_ENTERPRISE_PREMIUM_RESILIENT`
+**Audit Checksum**: `DIGITAL_MODERNIZER_V2.5_ENTERPRISE_PREMIUM_AUTONOMOUS`

@@ -49,10 +49,18 @@ def get_project_tree(target_dir="."):
     return build_tree(target_dir)
 
 def init_project(target_dir="."):
+    target_abs_path = os.path.abspath(target_dir)
+    project_name = os.path.basename(target_abs_path.rstrip(os.sep))
+    if not project_name:
+        project_name = "root"
+
     if not os.path.exists("results"):
         os.makedirs("results")
         
-    tree = get_project_tree(target_dir)
+    tree = get_project_tree(target_abs_path)
+    # Add project metadata to the tree
+    tree["project_name"] = project_name
+    
     with open("results/project_tree.json", "w") as f:
         json.dump(tree, f, indent=2)
     
@@ -73,11 +81,12 @@ def init_project(target_dir="."):
     flat_files(tree)
     
     status = {
+        "project_name": project_name,
         "files": files_to_process,
         "global_symbols": [],
         "total_files": len(files_to_process),
         "completed_files": 0,
-        "root_dir": os.path.abspath(target_dir)
+        "root_dir": target_abs_path
     }
     
     with open("results/status.json", "w") as f:
@@ -90,15 +99,16 @@ def init_project(target_dir="."):
                 "edges": [], 
                 "metadata": {
                     "version": "4.0.0",
-                    "status": "CLEAN"
+                    "status": "CLEAN",
+                    "project_name": project_name
                 }
             }, f, indent=2)
             
     if not os.path.exists("results/symbol_table.json"):
         with open("results/symbol_table.json", "w") as f:
-            json.dump({}, f, indent=2)
+            json.dump({"project_name": project_name}, f, indent=2)
 
-    print(f"Project initialized.")
+    print(f"Project '{project_name}' initialized.")
     print(f"Project Tree saved to results/project_tree.json")
     print(f"Found {len(files_to_process)} files to process.")
 

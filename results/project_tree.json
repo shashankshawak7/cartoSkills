@@ -1,170 +1,116 @@
 {
-  "name": "SKILLaI",
+  "name": "petclinic",
   "path": ".",
   "type": "folder",
   "children": [
     {
-      "name": "README.md",
-      "path": "README.md",
+      "name": "PetClinicApplication.java",
+      "path": "PetClinicApplication.java",
       "type": "file"
     },
     {
-      "name": "config",
-      "path": "config",
-      "type": "folder",
-      "children": [
-        {
-          "name": "ignore_map.json",
-          "path": "config\\ignore_map.json",
-          "type": "file"
-        }
-      ]
-    },
-    {
-      "name": "documentation",
-      "path": "documentation",
-      "type": "folder",
-      "children": [
-        {
-          "name": "config",
-          "path": "documentation\\config",
-          "type": "folder",
-          "children": [
-            {
-              "name": "ignore_map.json.md",
-              "path": "documentation\\config\\ignore_map.json.md",
-              "type": "file"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "documentation.md",
-      "path": "documentation.md",
+      "name": "PetClinicRuntimeHints.java",
+      "path": "PetClinicRuntimeHints.java",
       "type": "file"
     },
     {
-      "name": "init_pipeline.py",
-      "path": "init_pipeline.py",
+      "name": "model",
+      "path": "model",
+      "type": "folder",
+      "children": [
+        {
+          "name": "BaseEntity.java",
+          "path": "model\\BaseEntity.java",
+          "type": "file"
+        },
+        {
+          "name": "NamedEntity.java",
+          "path": "model\\NamedEntity.java",
+          "type": "file"
+        },
+        {
+          "name": "Person.java",
+          "path": "model\\Person.java",
+          "type": "file"
+        },
+        {
+          "name": "package-info.java",
+          "path": "model\\package-info.java",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "owner",
+      "path": "owner",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Owner.java",
+          "path": "owner\\Owner.java",
+          "type": "file"
+        },
+        {
+          "name": "OwnerController.java",
+          "path": "owner\\OwnerController.java",
+          "type": "file"
+        },
+        {
+          "name": "OwnerRepository.java",
+          "path": "owner\\OwnerRepository.java",
+          "type": "file"
+        },
+        {
+          "name": "Pet.java",
+          "path": "owner\\Pet.java",
+          "type": "file"
+        },
+        {
+          "name": "PetController.java",
+          "path": "owner\\PetController.java",
+          "type": "file"
+        },
+        {
+          "name": "PetType.java",
+          "path": "owner\\PetType.java",
+          "type": "file"
+        },
+        {
+          "name": "PetTypeFormatter.java",
+          "path": "owner\\PetTypeFormatter.java",
+          "type": "file"
+        },
+        {
+          "name": "PetTypeRepository.java",
+          "path": "owner\\PetTypeRepository.java",
+          "type": "file"
+        },
+        {
+          "name": "PetValidator.java",
+          "path": "owner\\PetValidator.java",
+          "type": "file"
+        },
+        {
+          "name": "Visit.java",
+          "path": "owner\\Visit.java",
+          "type": "file"
+        },
+        {
+          "name": "VisitController.java",
+          "path": "owner\\VisitController.java",
+          "type": "file"
+        },
+        {
+          "name": "package-info.java",
+          "path": "owner\\package-info.java",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "package-info.java",
+      "path": "package-info.java",
       "type": "file"
-    },
-    {
-      "name": "irmapper",
-      "path": "irmapper",
-      "type": "folder",
-      "children": [
-        {
-          "name": "config",
-          "path": "irmapper\\config",
-          "type": "folder",
-          "children": [
-            {
-              "name": "ignore_map.json.yaml",
-              "path": "irmapper\\config\\ignore_map.json.yaml",
-              "type": "file"
-            }
-          ]
-        },
-        {
-          "name": "documentation.md.yaml",
-          "path": "irmapper\\documentation.md.yaml",
-          "type": "file"
-        },
-        {
-          "name": "legacy",
-          "path": "irmapper\\legacy",
-          "type": "folder",
-          "children": [
-            {
-              "name": "ORDER_ENTRY.xml.yaml",
-              "path": "irmapper\\legacy\\ORDER_ENTRY.xml.yaml",
-              "type": "file"
-            },
-            {
-              "name": "UMyManager.pas.yaml",
-              "path": "irmapper\\legacy\\UMyManager.pas.yaml",
-              "type": "file"
-            },
-            {
-              "name": "order_manager.cls.yaml",
-              "path": "irmapper\\legacy\\order_manager.cls.yaml",
-              "type": "file"
-            }
-          ]
-        },
-        {
-          "name": "scripts",
-          "path": "irmapper\\scripts",
-          "type": "folder",
-          "children": [
-            {
-              "name": "init_project.py.yaml",
-              "path": "irmapper\\scripts\\init_project.py.yaml",
-              "type": "file"
-            },
-            {
-              "name": "utils.py.yaml",
-              "path": "irmapper\\scripts\\utils.py.yaml",
-              "type": "file"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "legacy",
-      "path": "legacy",
-      "type": "folder",
-      "children": [
-        {
-          "name": "ORDER_ENTRY.xml",
-          "path": "legacy\\ORDER_ENTRY.xml",
-          "type": "file"
-        },
-        {
-          "name": "UMyManager.pas",
-          "path": "legacy\\UMyManager.pas",
-          "type": "file"
-        },
-        {
-          "name": "order_manager.cls",
-          "path": "legacy\\order_manager.cls",
-          "type": "file"
-        }
-      ]
-    },
-    {
-      "name": "prompts",
-      "path": "prompts",
-      "type": "folder",
-      "children": [
-        {
-          "name": "documentor_worker.md",
-          "path": "prompts\\documentor_worker.md",
-          "type": "file"
-        },
-        {
-          "name": "irmapper_worker.md",
-          "path": "prompts\\irmapper_worker.md",
-          "type": "file"
-        },
-        {
-          "name": "manager.md",
-          "path": "prompts\\manager.md",
-          "type": "file"
-        },
-        {
-          "name": "modernizer_worker.md",
-          "path": "prompts\\modernizer_worker.md",
-          "type": "file"
-        },
-        {
-          "name": "parser_worker.md",
-          "path": "prompts\\parser_worker.md",
-          "type": "file"
-        }
-      ]
     },
     {
       "name": "results",
@@ -173,391 +119,83 @@
       "children": []
     },
     {
-      "name": "schemas",
-      "path": "schemas",
+      "name": "system",
+      "path": "system",
       "type": "folder",
       "children": [
         {
-          "name": "edge.schema.json",
-          "path": "schemas\\edge.schema.json",
+          "name": "CacheConfiguration.java",
+          "path": "system\\CacheConfiguration.java",
           "type": "file"
         },
         {
-          "name": "graph.schema.json",
-          "path": "schemas\\graph.schema.json",
+          "name": "CrashController.java",
+          "path": "system\\CrashController.java",
           "type": "file"
         },
         {
-          "name": "node.schema.json",
-          "path": "schemas\\node.schema.json",
+          "name": "WebConfiguration.java",
+          "path": "system\\WebConfiguration.java",
           "type": "file"
         },
         {
-          "name": "symbol_table.schema.json",
-          "path": "schemas\\symbol_table.schema.json",
+          "name": "WelcomeController.java",
+          "path": "system\\WelcomeController.java",
+          "type": "file"
+        },
+        {
+          "name": "package-info.java",
+          "path": "system\\package-info.java",
           "type": "file"
         }
       ]
     },
     {
-      "name": "scripts",
-      "path": "scripts",
+      "name": "vet",
+      "path": "vet",
       "type": "folder",
       "children": [
         {
-          "name": "init_documentation.py",
-          "path": "scripts\\init_documentation.py",
+          "name": "Specialty.java",
+          "path": "vet\\Specialty.java",
           "type": "file"
         },
         {
-          "name": "init_irmapper.py",
-          "path": "scripts\\init_irmapper.py",
+          "name": "Vet.java",
+          "path": "vet\\Vet.java",
           "type": "file"
         },
         {
-          "name": "init_modernizer.py",
-          "path": "scripts\\init_modernizer.py",
+          "name": "VetController.java",
+          "path": "vet\\VetController.java",
           "type": "file"
         },
         {
-          "name": "init_project.py",
-          "path": "scripts\\init_project.py",
+          "name": "VetRepository.java",
+          "path": "vet\\VetRepository.java",
           "type": "file"
         },
         {
-          "name": "modernizer_orchestrator.py",
-          "path": "scripts\\modernizer_orchestrator.py",
+          "name": "Vets.java",
+          "path": "vet\\Vets.java",
           "type": "file"
         },
         {
-          "name": "utils.py",
-          "path": "scripts\\utils.py",
+          "name": "package-info.java",
+          "path": "vet\\package-info.java",
           "type": "file"
         },
         {
-          "name": "validate_graph.py",
-          "path": "scripts\\validate_graph.py",
+          "name": "vet_repository.py",
+          "path": "vet\\vet_repository.py",
+          "type": "file"
+        },
+        {
+          "name": "vetcontroller.py",
+          "path": "vet\\vetcontroller.py",
           "type": "file"
         }
       ]
-    },
-    {
-      "name": "skills",
-      "path": "skills",
-      "type": "folder",
-      "children": [
-        {
-          "name": "ai_cartographer",
-          "path": "skills\\ai_cartographer",
-          "type": "folder",
-          "children": [
-            {
-              "name": "SKILL.md",
-              "path": "skills\\ai_cartographer\\SKILL.md",
-              "type": "file"
-            },
-            {
-              "name": "languages",
-              "path": "skills\\ai_cartographer\\languages",
-              "type": "folder",
-              "children": [
-                {
-                  "name": "c_cpp.md",
-                  "path": "skills\\ai_cartographer\\languages\\c_cpp.md",
-                  "type": "file"
-                },
-                {
-                  "name": "cobol.md",
-                  "path": "skills\\ai_cartographer\\languages\\cobol.md",
-                  "type": "file"
-                },
-                {
-                  "name": "delphi.md",
-                  "path": "skills\\ai_cartographer\\languages\\delphi.md",
-                  "type": "file"
-                },
-                {
-                  "name": "dotnet.md",
-                  "path": "skills\\ai_cartographer\\languages\\dotnet.md",
-                  "type": "file"
-                },
-                {
-                  "name": "go.md",
-                  "path": "skills\\ai_cartographer\\languages\\go.md",
-                  "type": "file"
-                },
-                {
-                  "name": "java.md",
-                  "path": "skills\\ai_cartographer\\languages\\java.md",
-                  "type": "file"
-                },
-                {
-                  "name": "jcl.md",
-                  "path": "skills\\ai_cartographer\\languages\\jcl.md",
-                  "type": "file"
-                },
-                {
-                  "name": "oracle_forms.md",
-                  "path": "skills\\ai_cartographer\\languages\\oracle_forms.md",
-                  "type": "file"
-                },
-                {
-                  "name": "php.md",
-                  "path": "skills\\ai_cartographer\\languages\\php.md",
-                  "type": "file"
-                },
-                {
-                  "name": "progress4gl.md",
-                  "path": "skills\\ai_cartographer\\languages\\progress4gl.md",
-                  "type": "file"
-                },
-                {
-                  "name": "python.md",
-                  "path": "skills\\ai_cartographer\\languages\\python.md",
-                  "type": "file"
-                },
-                {
-                  "name": "ruby.md",
-                  "path": "skills\\ai_cartographer\\languages\\ruby.md",
-                  "type": "file"
-                },
-                {
-                  "name": "rust.md",
-                  "path": "skills\\ai_cartographer\\languages\\rust.md",
-                  "type": "file"
-                },
-                {
-                  "name": "shell.md",
-                  "path": "skills\\ai_cartographer\\languages\\shell.md",
-                  "type": "file"
-                },
-                {
-                  "name": "sql.md",
-                  "path": "skills\\ai_cartographer\\languages\\sql.md",
-                  "type": "file"
-                },
-                {
-                  "name": "vb_vba.md",
-                  "path": "skills\\ai_cartographer\\languages\\vb_vba.md",
-                  "type": "file"
-                },
-                {
-                  "name": "web_logic.md",
-                  "path": "skills\\ai_cartographer\\languages\\web_logic.md",
-                  "type": "file"
-                },
-                {
-                  "name": "web_ui.md",
-                  "path": "skills\\ai_cartographer\\languages\\web_ui.md",
-                  "type": "file"
-                }
-              ]
-            },
-            {
-              "name": "validator.md",
-              "path": "skills\\ai_cartographer\\validator.md",
-              "type": "file"
-            }
-          ]
-        },
-        {
-          "name": "digital_modernizer",
-          "path": "skills\\digital_modernizer",
-          "type": "folder",
-          "children": [
-            {
-              "name": "SKILL.md",
-              "path": "skills\\digital_modernizer\\SKILL.md",
-              "type": "file"
-            },
-            {
-              "name": "blueprints",
-              "path": "skills\\digital_modernizer\\blueprints",
-              "type": "folder",
-              "children": [
-                {
-                  "name": "SCHEMA.md",
-                  "path": "skills\\digital_modernizer\\blueprints\\SCHEMA.md",
-                  "type": "file"
-                },
-                {
-                  "name": "backend",
-                  "path": "skills\\digital_modernizer\\blueprints\\backend",
-                  "type": "folder",
-                  "children": [
-                    {
-                      "name": "django_rest_framework.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\backend\\django_rest_framework.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "dotnet_core_clean.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\backend\\dotnet_core_clean.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "fastapi_async.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\backend\\fastapi_async.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "go_gin_echo.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\backend\\go_gin_echo.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "laravel_modern.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\backend\\laravel_modern.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "micronaut.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\backend\\micronaut.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "nestjs_modular.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\backend\\nestjs_modular.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "play_framework.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\backend\\play_framework.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "quarkus_native.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\backend\\quarkus_native.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "ruby_on_rails.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\backend\\ruby_on_rails.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "rust_axum.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\backend\\rust_axum.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "spring_boot_microservices.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\backend\\spring_boot_microservices.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "vertx_reactive.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\backend\\vertx_reactive.md",
-                      "type": "file"
-                    }
-                  ]
-                },
-                {
-                  "name": "frontend",
-                  "path": "skills\\digital_modernizer\\blueprints\\frontend",
-                  "type": "folder",
-                  "children": [
-                    {
-                      "name": "angular_enterprise.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\frontend\\angular_enterprise.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "blazor_wasm.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\frontend\\blazor_wasm.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "dotnet_mvc_razor.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\frontend\\dotnet_mvc_razor.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "react_enterprise_ts.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\frontend\\react_enterprise_ts.md",
-                      "type": "file"
-                    },
-                    {
-                      "name": "vue_nuxt.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\frontend\\vue_nuxt.md",
-                      "type": "file"
-                    }
-                  ]
-                },
-                {
-                  "name": "fullstack",
-                  "path": "skills\\digital_modernizer\\blueprints\\fullstack",
-                  "type": "folder",
-                  "children": [
-                    {
-                      "name": "nextjs_fullstack.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\fullstack\\nextjs_fullstack.md",
-                      "type": "file"
-                    }
-                  ]
-                },
-                {
-                  "name": "mobile",
-                  "path": "skills\\digital_modernizer\\blueprints\\mobile",
-                  "type": "folder",
-                  "children": [
-                    {
-                      "name": "flutter_clean.md",
-                      "path": "skills\\digital_modernizer\\blueprints\\mobile\\flutter_clean.md",
-                      "type": "file"
-                    }
-                  ]
-                },
-                {
-                  "name": "web3",
-                  "path": "skills\\digital_modernizer\\blueprints\\web3",
-                  "type": "folder",
-                  "children": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "irmapper_skill",
-          "path": "skills\\irmapper_skill",
-          "type": "folder",
-          "children": [
-            {
-              "name": "SKILL.md",
-              "path": "skills\\irmapper_skill\\SKILL.md",
-              "type": "file"
-            },
-            {
-              "name": "template.yaml",
-              "path": "skills\\irmapper_skill\\template.yaml",
-              "type": "file"
-            }
-          ]
-        },
-        {
-          "name": "retro_documentor",
-          "path": "skills\\retro_documentor",
-          "type": "folder",
-          "children": [
-            {
-              "name": "SKILL.md",
-              "path": "skills\\retro_documentor\\SKILL.md",
-              "type": "file"
-            },
-            {
-              "name": "template.md",
-              "path": "skills\\retro_documentor\\template.md",
-              "type": "file"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "tmp_modernize_step.py",
-      "path": "tmp_modernize_step.py",
-      "type": "file"
     }
   ]
 }

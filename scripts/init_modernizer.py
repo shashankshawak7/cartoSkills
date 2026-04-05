@@ -9,21 +9,27 @@ Logic Parity: 100% (IRMapper Mapping Integrity)
 Seeds the results/modernization_status.json based on existing IRMapper data.
 """
 def init_modernization_status(project_root):
-    results_dir = os.path.join(project_root, "results")
+    project_abs_path = os.path.abspath(project_root)
+    project_name = os.path.basename(project_abs_path.rstrip(os.sep))
+    if not project_name:
+        project_name = "root"
+
+    results_dir = "results"
     irmapper_file = os.path.join(results_dir, "irmapper_status.json")
     output_file = os.path.join(results_dir, "modernization_status.json")
     
     if not os.path.exists(irmapper_file):
         print(f"⚠️ IRMapper status not found. Initializing empty modernization queue.")
-        irmapper_data = []
+        irmapper_data = {"project_name": project_name, "files": {}}
     else:
         with open(irmapper_file, 'r') as f:
             irmapper_data = json.load(f)
 
     modernization_status = []
-    # If irmapper_data is a dictionary (from init_irmapper.py)
-    if isinstance(irmapper_data, dict):
-        for file_path, entry in irmapper_data.items():
+    
+    files_data = irmapper_data.get("files", {})
+    if isinstance(files_data, dict):
+        for file_path, entry in files_data.items():
             modernization_status.append({
                 "file": file_path,
                 "mapped": entry.get("mapped", False),
@@ -33,9 +39,9 @@ def init_modernization_status(project_root):
                 "error_log": None,
                 "retry_count": 0
             })
-    # If it's a list (legacy format)
     else:
-        for entry in irmapper_data:
+        # Fallback for legacy format
+        for entry in files_data:
             modernization_status.append({
                 "file": entry["file"],
                 "mapped": entry.get("mapped", False),
@@ -46,10 +52,22 @@ def init_modernization_status(project_root):
                 "retry_count": 0
             })
 
-    with open(output_file, 'w') as f:
-        json.dump(modernization_status, f, indent=2)
+    output_data = {
+        "project_name": project_name,
+        "files": modernization_status
+    }
 
-    print(f"✅ Modernization tracker seeded: {len(modernization_status)} items tracked in {output_file}")
+    if not os.path.exists("modernizer"):
+        os.makedirs("modernizer")
+    
+    project_modernizer_dir = os.path.join("modernizer", project_name)
+    if not os.path.exists(project_modernizer_dir):
+        os.makedirs(project_modernizer_dir)
+
+    with open(output_file, 'w') as f:
+        json.dump(output_data, f, indent=2)
+
+    print(f"✅ Modernization tracker for '{project_name}' seeded: {len(modernization_status)} items tracked in {output_file}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Initialize Digital Modernization Tracker")

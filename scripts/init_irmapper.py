@@ -3,8 +3,13 @@ import json
 import argparse
 
 def init_irmapper(project_root):
-    status_file = os.path.join(project_root, "results", "irmapper_status.json")
-    project_tree_file = os.path.join(project_root, "results", "project_tree.json")
+    project_abs_path = os.path.abspath(project_root)
+    project_name = os.path.basename(project_abs_path.rstrip(os.sep))
+    if not project_name:
+        project_name = "root"
+
+    status_file = os.path.join("results", "irmapper_status.json")
+    project_tree_file = os.path.join("results", "project_tree.json")
     
     if not os.path.exists(project_tree_file):
         print(f"Error: {project_tree_file} not found. Run init_project.py first.")
@@ -17,7 +22,6 @@ def init_irmapper(project_root):
 
     def walk_tree(node):
         if node['type'] == 'file':
-            # Skip non-source files if desired, but for now we follow the project tree
             irmapper_status[node['path']] = {
                 "mapped": False,
                 "logic_mapped": False,
@@ -30,10 +34,22 @@ def init_irmapper(project_root):
 
     walk_tree(tree)
 
-    with open(status_file, 'w') as f:
-        json.dump(irmapper_status, f, indent=2)
+    output_data = {
+        "project_name": project_name,
+        "files": irmapper_status
+    }
 
-    print(f"Initialized IRMapper status in {status_file}")
+    if not os.path.exists("irmapper"):
+        os.makedirs("irmapper")
+    
+    project_irmapper_dir = os.path.join("irmapper", project_name)
+    if not os.path.exists(project_irmapper_dir):
+        os.makedirs(project_irmapper_dir)
+
+    with open(status_file, 'w') as f:
+        json.dump(output_data, f, indent=2)
+
+    print(f"Initialized IRMapper status for '{project_name}' in {status_file}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Initialize IRMapper Status Tracker")

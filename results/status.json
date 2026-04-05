@@ -1,546 +1,224 @@
 {
   "files": [
     {
-      "path": "README.md",
+      "path": "PetClinicApplication.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "config\\ignore_map.json",
+      "path": "PetClinicRuntimeHints.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "documentation\\config\\ignore_map.json.md",
+      "path": "model\\BaseEntity.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "documentation.md",
+      "path": "model\\NamedEntity.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "init_pipeline.py",
+      "path": "model\\Person.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "irmapper\\config\\ignore_map.json.yaml",
+      "path": "model\\package-info.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "irmapper\\documentation.md.yaml",
+      "path": "owner\\Owner.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "irmapper\\legacy\\ORDER_ENTRY.xml.yaml",
+      "path": "owner\\OwnerController.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "irmapper\\legacy\\UMyManager.pas.yaml",
+      "path": "owner\\OwnerRepository.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "irmapper\\legacy\\order_manager.cls.yaml",
+      "path": "owner\\Pet.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "irmapper\\scripts\\init_project.py.yaml",
+      "path": "owner\\PetController.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "irmapper\\scripts\\utils.py.yaml",
+      "path": "owner\\PetType.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "legacy\\ORDER_ENTRY.xml",
+      "path": "owner\\PetTypeFormatter.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "legacy\\UMyManager.pas",
+      "path": "owner\\PetTypeRepository.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "legacy\\order_manager.cls",
+      "path": "owner\\PetValidator.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "prompts\\documentor_worker.md",
+      "path": "owner\\Visit.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "prompts\\irmapper_worker.md",
+      "path": "owner\\VisitController.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "prompts\\manager.md",
+      "path": "owner\\package-info.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "prompts\\modernizer_worker.md",
+      "path": "package-info.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "prompts\\parser_worker.md",
+      "path": "system\\CacheConfiguration.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "schemas\\edge.schema.json",
+      "path": "system\\CrashController.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "schemas\\graph.schema.json",
+      "path": "system\\WebConfiguration.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "schemas\\node.schema.json",
+      "path": "system\\WelcomeController.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "schemas\\symbol_table.schema.json",
+      "path": "system\\package-info.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "scripts\\init_documentation.py",
+      "path": "vet\\Specialty.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "scripts\\init_irmapper.py",
+      "path": "vet\\Vet.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "scripts\\init_modernizer.py",
+      "path": "vet\\VetController.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "scripts\\init_project.py",
+      "path": "vet\\VetRepository.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "scripts\\modernizer_orchestrator.py",
+      "path": "vet\\Vets.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "scripts\\utils.py",
+      "path": "vet\\package-info.java",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "scripts\\validate_graph.py",
+      "path": "vet\\vet_repository.py",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
       "parsed_at": null
     },
     {
-      "path": "skills\\ai_cartographer\\SKILL.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\c_cpp.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\cobol.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\delphi.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\dotnet.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\go.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\java.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\jcl.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\oracle_forms.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\php.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\progress4gl.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\python.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\ruby.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\rust.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\shell.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\sql.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\vb_vba.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\web_logic.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\languages\\web_ui.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\ai_cartographer\\validator.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\SKILL.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\SCHEMA.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\backend\\django_rest_framework.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\backend\\dotnet_core_clean.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\backend\\fastapi_async.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\backend\\go_gin_echo.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\backend\\laravel_modern.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\backend\\micronaut.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\backend\\nestjs_modular.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\backend\\play_framework.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\backend\\quarkus_native.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\backend\\ruby_on_rails.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\backend\\rust_axum.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\backend\\spring_boot_microservices.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\backend\\vertx_reactive.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\frontend\\angular_enterprise.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\frontend\\blazor_wasm.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\frontend\\dotnet_mvc_razor.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\frontend\\react_enterprise_ts.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\frontend\\vue_nuxt.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\fullstack\\nextjs_fullstack.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\digital_modernizer\\blueprints\\mobile\\flutter_clean.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\irmapper_skill\\SKILL.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\irmapper_skill\\template.yaml",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\retro_documentor\\SKILL.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "skills\\retro_documentor\\template.md",
-      "status": "NOT_STARTED",
-      "extracted_symbols": [],
-      "error": null,
-      "parsed_at": null
-    },
-    {
-      "path": "tmp_modernize_step.py",
+      "path": "vet\\vetcontroller.py",
       "status": "NOT_STARTED",
       "extracted_symbols": [],
       "error": null,
@@ -548,7 +226,7 @@
     }
   ],
   "global_symbols": [],
-  "total_files": 78,
+  "total_files": 32,
   "completed_files": 0,
-  "root_dir": "C:\\Users\\shash\\OneDrive_x\\Desktop\\SKILLaI"
+  "root_dir": "C:\\Users\\shash\\Downloads\\spring-petclinic-main\\petclinic"
 }

@@ -1,544 +1,222 @@
 {
-  "documentation.md": {
+  "package-info.java": {
     "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "init_pipeline.py": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "README.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "tmp_modernize_step.py": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "config\\ignore_map.json": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "documentation\\config\\ignore_map.json.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "irmapper\\documentation.md.yaml": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "irmapper\\config\\ignore_map.json.yaml": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "irmapper\\legacy\\ORDER_ENTRY.xml.yaml": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "irmapper\\legacy\\order_manager.cls.yaml": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "irmapper\\legacy\\UMyManager.pas.yaml": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "irmapper\\scripts\\init_project.py.yaml": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "irmapper\\scripts\\utils.py.yaml": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "legacy\\ORDER_ENTRY.xml": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "legacy\\order_manager.cls": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "legacy\\UMyManager.pas": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "prompts\\documentor_worker.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "prompts\\irmapper_worker.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "prompts\\manager.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "prompts\\modernizer_worker.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "prompts\\parser_worker.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "schemas\\edge.schema.json": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "schemas\\graph.schema.json": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "schemas\\node.schema.json": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "schemas\\symbol_table.schema.json": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "scripts\\init_documentation.py": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "scripts\\init_irmapper.py": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "scripts\\init_modernizer.py": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "scripts\\init_project.py": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "scripts\\modernizer_orchestrator.py": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "scripts\\utils.py": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "scripts\\validate_graph.py": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\SKILL.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\validator.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\languages\\cobol.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\languages\\c_cpp.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\languages\\delphi.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\languages\\dotnet.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\languages\\go.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\languages\\java.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\languages\\jcl.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\languages\\oracle_forms.md": {
-    "mapped": false,
-    "documented": false,
+    "documented": true,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\ai_cartographer\\languages\\php.md": {
+  "PetClinicApplication.java": {
     "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\languages\\progress4gl.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\languages\\python.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\languages\\ruby.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\languages\\rust.md": {
-    "mapped": false,
-    "documented": false,
-    "hyper_detailed": false,
-    "diagram_verified": false,
-    "batch": null
-  },
-  "skills\\ai_cartographer\\languages\\shell.md": {
-    "mapped": false,
-    "documented": false,
+    "documented": true,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\ai_cartographer\\languages\\sql.md": {
+  "PetClinicRuntimeHints.java": {
     "mapped": false,
-    "documented": false,
+    "documented": true,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\ai_cartographer\\languages\\vb_vba.md": {
+  "model\\BaseEntity.java": {
     "mapped": false,
-    "documented": false,
+    "documented": true,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\ai_cartographer\\languages\\web_logic.md": {
+  "model\\NamedEntity.java": {
     "mapped": false,
-    "documented": false,
+    "documented": true,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\ai_cartographer\\languages\\web_ui.md": {
+  "model\\package-info.java": {
     "mapped": false,
-    "documented": false,
+    "documented": true,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\SKILL.md": {
+  "model\\Person.java": {
     "mapped": false,
-    "documented": false,
+    "documented": true,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\SCHEMA.md": {
+  "owner\\Owner.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\backend\\django_rest_framework.md": {
+  "owner\\OwnerController.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\backend\\dotnet_core_clean.md": {
+  "owner\\OwnerRepository.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\backend\\fastapi_async.md": {
+  "owner\\package-info.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\backend\\go_gin_echo.md": {
+  "owner\\Pet.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\backend\\laravel_modern.md": {
+  "owner\\PetController.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\backend\\micronaut.md": {
+  "owner\\PetType.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\backend\\nestjs_modular.md": {
+  "owner\\PetTypeFormatter.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\backend\\play_framework.md": {
+  "owner\\PetTypeRepository.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\backend\\quarkus_native.md": {
+  "owner\\PetValidator.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\backend\\ruby_on_rails.md": {
+  "owner\\Visit.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\backend\\rust_axum.md": {
+  "owner\\VisitController.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\backend\\spring_boot_microservices.md": {
+  "system\\CacheConfiguration.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\backend\\vertx_reactive.md": {
+  "system\\CrashController.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\frontend\\angular_enterprise.md": {
+  "system\\package-info.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\frontend\\blazor_wasm.md": {
+  "system\\WebConfiguration.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\frontend\\dotnet_mvc_razor.md": {
+  "system\\WelcomeController.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\frontend\\react_enterprise_ts.md": {
+  "vet\\package-info.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\frontend\\vue_nuxt.md": {
+  "vet\\Specialty.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\fullstack\\nextjs_fullstack.md": {
+  "vet\\Vet.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\digital_modernizer\\blueprints\\mobile\\flutter_clean.md": {
+  "vet\\VetController.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\irmapper_skill\\SKILL.md": {
+  "vet\\vetcontroller.py": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\irmapper_skill\\template.yaml": {
+  "vet\\VetRepository.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\retro_documentor\\SKILL.md": {
+  "vet\\Vets.java": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,
     "diagram_verified": false,
     "batch": null
   },
-  "skills\\retro_documentor\\template.md": {
+  "vet\\vet_repository.py": {
     "mapped": false,
     "documented": false,
     "hyper_detailed": false,

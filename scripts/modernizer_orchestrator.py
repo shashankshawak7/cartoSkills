@@ -63,15 +63,47 @@ class ModernizerOrchestrator:
                 logger.error(f"❌ Modernization FAILED: {file_path} - {error_msg}")
                 break
 
+    def run_autonomous(self, process_callback):
+        """
+        Drives the modernization process autonomously until the queue is empty.
+        'process_callback' should be a function that takes (file_path, target_stack) 
+        and returns success (bool).
+        """
+        pending = self.get_pending_tasks()
+        if not pending:
+            logger.info("✅ Modernization queue is empty. Zero-Touch Completion achieved.")
+            return
+
+        logger.info(f"🦾 Starting Autonomous Modernization: {len(pending)} files remaining.")
+        
+        for task in pending:
+            file_path = task["file"]
+            target_stack = task.get("target_stack", "MODERN_STACK") # Default if pending
+            
+            self.mark_as_started(file_path, target_stack)
+            
+            try:
+                success = process_callback(file_path, target_stack)
+                if success:
+                    self.finalize_modernization(file_path)
+                else:
+                    self.log_failure(file_path, "Process callback returned failure.")
+            except Exception as e:
+                self.log_failure(file_path, str(e))
+
 if __name__ == "__main__":
     import sys
     project_root = sys.argv[1] if len(sys.argv) > 1 else os.getcwd()
     orchestrator = ModernizerOrchestrator(project_root)
-    pending = orchestrator.get_pending_tasks()
-    print(f"📊 Modernization Queue Status:")
-    print(f"   - Total Files: {len(orchestrator.status_data)}")
-    print(f"   - Pending Modernization: {len(pending)}")
-    for p in pending[:5]:
-        print(f"     - [PENDING] {p['file']}")
-    if len(pending) > 5:
-        print(f"     - ... and {len(pending)-5} more.")
+    
+    if "--run-all" in sys.argv:
+        # This is a placeholder for actual autonomous execution via AI worker
+        logger.info("🦾 Zero-Touch Autonomous Mode Requested.")
+        pending = orchestrator.get_pending_tasks()
+        print(f"Pending tasks: {len(pending)}")
+    else:
+        pending = orchestrator.get_pending_tasks()
+        print(f"📊 Modernization Queue Status:")
+        print(f"   - Project: {orchestrator.status_data.get('project_name', 'Unknown')}")
+        print(f"   - Total Files: {len(orchestrator.status_data.get('files', []))}")
+        print(f"   - Pending Modernization: {len(pending)}")
