@@ -1,15 +1,51 @@
 import os
 import json
 
+def load_ignore_map():
+    config_path = os.path.join(os.path.dirname(__file__), "..", "config", "ignore_map.json")
+    if os.path.exists(config_path):
+        with open(config_path, "r") as f:
+            return json.load(f)
+    return {"global": {"directories": [], "files": []}}
+
+def should_skip(path, name, is_dir, ignore_map):
+    all_dirs = []
+    all_files = []
+    for category in ignore_map.values():
+        all_dirs.extend(category.get("directories", []))
+        all_files.extend(category.get("files", []))
+    
+    if is_dir:
+        # Check for exact matches or wildcard/prefix matches
+        for d in all_dirs:
+            if name == d:
+                return True
+            if d.endswith('*') and name.startswith(d[:-1]):
+                return True
+            if d.startswith('.') and name.startswith(d):
+                return True
+        return False
+    else:
+        # Check for exact matches or extension wildcards
+        for f in all_files:
+            if name == f:
+                return True
+            if f.startswith('*') and name.endswith(f[1:]):
+                return True
+        return False
+
 def get_project_tree(target_dir="."):
-    ignore_dirs = {".git", "__pycache__", "node_modules", ".venv", "venv", "dist", "build"}
-    ignore_files = {".gitignore", "package-lock.json", "poetry.lock", "status.json", "graph.json", "project_tree.json", "symbol_table.json"}
+    ignore_map = load_ignore_map()
     
     def build_tree(path):
         name = os.path.basename(path)
         if not name:
             name = "root"
         
+        is_dir = os.path.isdir(path)
+        if should_skip(path, name, is_dir, ignore_map):
+            return None
+
         node = {
             "name": name,
             "path": os.path.relpath(path, target_dir) if path != target_dir else ".",
@@ -23,16 +59,20 @@ def get_project_tree(target_dir="."):
             return None
             
         for item in sorted(items):
-            if item in ignore_dirs or item in ignore_files:
+            full_path = os.path.join(path, item)
+            child_is_dir = os.path.isdir(full_path)
+            
+            if should_skip(full_path, item, child_is_dir, ignore_map):
                 continue
                 
-            full_path = os.path.join(path, item)
-            if os.path.isdir(full_path):
+            if child_is_dir:
                 child = build_tree(full_path)
                 if child:
                     node["children"].append(child)
             else:
-                if any(item.endswith(ext) for ext in [".py", ".js", ".ts", ".java", ".cpp", ".c", ".go"]):
+                # Use the same list of supported extensions as init_documentation
+                extensions = [".java", ".cbl", ".jcl", ".p", ".cls", ".ts", ".tsx", ".js", ".jsx", ".c", ".cpp", ".h", ".cs", ".py", ".go", ".rs", ".rb", ".php", ".sh", ".sql", ".pas", ".yaml", ".yml", ".md", ".json", ".txt", ".html", ".css"]
+                if any(item.endswith(ext) for ext in extensions):
                     node["children"].append({
                         "name": item,
                         "path": os.path.relpath(full_path, target_dir),
