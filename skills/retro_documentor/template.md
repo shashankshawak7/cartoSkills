@@ -1,69 +1,70 @@
 # [PROJECT/MODULE/FILE_NAME] (Enterprise Surgical Archive)
 
 <!-- GUARDRAIL: Do not render these HTML comments in the final output. 
-     This is an Enterprise-Grade Surgical Archive. No summaries. No placeholders. No omissions. 
-     Every single one of the 23 sections MUST be populated with high-density forensic data. 
-     Persona: Principal Enterprise Systems Auditor (Top-Tier Consulting). -->
+     This is an Enterprise-Grade Surgical Archive. NO SUMMARIZATION OF EXISTING EVIDENCE IS PERMITTED.
+     Sections with no supporting evidence in the source code MUST be marked:
+     > [!NOTE]
+     > N/A — No evidence found in this source artifact.
+     Do not fabricate business metrics (ROI, Revenue) if not present in source comments/documentation.
+     Persona: Principal Enterprise Systems Auditor. -->
 
 ---
 
 ## 1. 📑 Executive Summary & Business Intent
-- **Operational Purpose**: [Deconstruct the exact business problem this artifact resolves.]
-- **Business Value & ROI**: [Quantification of revenue, efficiency, or risk mitigation.]
-- **Business Criticality**: [Tier 1 (Mission Critical) / Tier 2 (Operational) / Tier 3 (Support) & Impact of downtime.]
-- **Stakeholder Registry**: [Primary owners, technical stewards, and direct clinical/business users.]
-- **Modernization Alignment**: [How this artifact fits into the long-term enterprise strategy.]
+- **Operational Purpose**: [Deconstruct the exact technical problem this artifact resolves.]
+- **Business Capability Alignment**: [Technical intent of the code (e.g., "Persistence Layer for User Records").]
+- **Business Criticality**: [Tier 1 (Mission Critical) / Tier 2 (Operational) / Tier 3 (Support) based on function.]
+- **Stakeholder Registry**: [Identifier for technical owners/authors found in code.]
+- **Modernization Alignment**: [Potential for refactoring or migration based on technical state.]
 
 ---
 
 ## 2. 🏗️ System Architecture & Alignment
 - **Architectural Paradigm**: [Microservices / Monolith / Event-Driven / Layered Architecture / Serverless.]
-- **Technology Stack**: [Version-specific languages, key frameworks, and binary targets (e.g., JVM, Node, C#).]
-- **Deployment Topology**: [Cloud Native (AWS/Azure), On-Premise, Hybrid, Containerization status.]
-- **Architecture Strategy**: [Justification for chosen design patterns vs. business requirements.]
-- **Scalability Vector**: [Description of horizontal/vertical scaling capabilities.]
+- **Technology Stack**: [Version-specific languages, key frameworks, and binary targets.]
+- **Deployment Topology**: [Cloud Native, On-Premise, or Hybrid hints found in code.]
+- **Architecture Strategy**: [Observed design patterns (e.g., Singleton, Factory).]
+- **Scalability Vector**: [Observed concurrency or distributed processing patterns.]
 
 ---
 
-## 🔗 3. Integration Context & Interfaces
-- **External Dependencies**: [API endpoints, SaaS connectors, and third-party services.]
-- **Interface Contracts**: [Deep technical specs of REST, gRPC, MQ, or SFTP interactions.]
-- **Data Flow Topology**: [Ingress ➜ Processing ➜ Egress mapping with protocol details.]
-- **Contract Protocols**: [Validation rules and protocol enforcement patterns found in code.]
-- **Inter-service Auth**: [Specific methods used for secure communication (mTLS, JWT, etc.).]
+## 3. 🔗 Integration Context & Interfaces
+- **External Dependencies**: [API endpoints, SaaS connectors, and third-party libraries.]
+- **Interface Contracts**: [Internal/External service boundaries.]
+- **Data Flow Topology**: [Ingress ➜ Processing ➜ Egress mapping.]
+- **Contract Protocols**: [Validation rules and protocol enforcement patterns.]
+- **Inter-service Auth**: [Observed auth patterns (JWT, API Keys).]
 
 ---
 
-## 📂 4. Structural Codebase Taxonomy
-- **Component Geometry**: [The exact physical and logical placement within the repository.]
+## 4. 📂 Structural Codebase Taxonomy
+- **Component Geometry**: [Physical and logical placement within the repository.]
 - **Key Artifacts**: [Entry points, service hubs, and primary configuration nodes.]
-- **Module Coupling**: [Relationship matrix with other internal components (Strength/Type).]
-- **Domain Mapping**: [How this directory structure maps to the business domain.]
+- **Module Coupling**: [Relationship matrix with other internal components.]
+- **Domain Mapping**: [How this code maps to the identified business domain.]
 
 ---
 
-## 🧠 5. Functional Decomposition (Logical Mapping)
-
-<!-- GUARDRAIL: Use Premium HTML Tables for maximum rendering stability. -->
+## 5. 🧠 Functional Decomposition (Logical Mapping)
 
 <table width="100%">
   <thead>
     <tr>
-      <th>Business Capability</th>
-      <th>Technical Primitive</th>
+      <th>Technical Capability</th>
+      <th>Code Primitive</th>
       <th>Logic Branching</th>
       <th>Data Dependency</th>
-      <th>Business ROI</th>
+      <th>Functional Impact</th>
       <th>Modernization Path</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>[Capability Name]</td>
+      <td>[Feature Name]</td>
       <td>[Method/Class]</td>
       <td>[Core Logic Gate]</td>
       <td>[State/DB Link]</td>
-      <td>[Value/Efficiency]</td>
+      <td>[System Effect]</td>
       <td>[Refactor/Extract]</td>
     </tr>
   </tbody>
@@ -71,8 +72,8 @@
 
 ---
 
-## 🔄 6. Execution Flow & State Management
-- **Primary Execution Path**: [Step-by-step narrative of the "Happy Path" logic.]
+## 6. 🔄 Execution Flow & State Management
+- **Primary Execution Path**: [Technical narrative of the "Happy Path" logic.]
 - **Logical State Mutation Matrix**:
 
 <table width="100%">
@@ -96,48 +97,47 @@
   </tbody>
 </table>
 
-- **Exception & Fault Flows**: [Detailed handling of non-happy paths and error states.]
-- **State Transition Map**: [Logical progression of state during execution.]
+- **Exception & Fault Flows**: [Observed error handling and catch blocks.]
+- **State Transition Map**: [Progression of state during execution.]
 
 ---
 
-## 📞 7. Call Graph & Dependency Chain (Methods)
-- **Inbound Trace**: [Comprehensive list of all internal/external callers with context.]
-- **Outbound Trace**: [Comprehensive list of all invocations made by this artifact.]
-- **Structural Inheritance**: [Deep hierarchy map including Base, Interfaces, and Mixins.]
-- **Call-Chain Risk Audit**: [Identification of circular or excessively nested dependencies.]
-- **Side Effect Matrix**: [Detailed mapping of non-returning state changes.]
+## 7. 📞 Call Graph & Dependency Chain
+- **Inbound Trace**: [Internal/external callers identified.]
+- **Outbound Trace**: [Invocations made by this artifact.]
+- **Structural Inheritance**: [Hierarchy map including Base classes and Interfaces.]
+- **Call-Chain Risk Audit**: [Circular or excessively nested dependencies.]
+- **Side Effect Matrix**: [Inferred non-returning state changes.]
 
 ---
 
 ## 🗄️ 8. Data Architecture & Persistence DNA (State)
 - **Storage Modalities**: [Databases, caches, memory, and local state.]
 - **Critical Data Entities**: [Key Tables, Documents, or Object representations.]
-- **Persistence Strategy**: [Isolation levels, SQL DDL patterns, and ORM mapping details.]
-- **Data Lifecycle Audit**: [Creation, update, and deletion rules/triggers.]
-- **Residency & Compliance**: [Pertaining to GDPR/HIPAA localized storage logic.]
+- **Persistence Strategy**: [Isolation levels, SQL patterns, and ORM details.]
+- **Data Lifecycle Audit**: [Creation, update, and deletion logic.]
+- **Residency & Compliance**: [Localized storage hints (e.g. region strings).]
 
 ---
 
-## 📥 9. I/O Specification & Data Operations
-- **System Inputs**: [Data formats (JSON/XML), origins, sanitization rules.]
-- **System Outputs**: [Data endpoints, payloads, rendering targets, and logs.]
-- **Validation Protocols**: [Strict algorithmic checks for data integrity.]
+## 🔧 9. Configuration, Constants & Environmentals
+- **Runtime Toggles**: [Flags and environment variable usage.]
+- **Hard-coded Constants**: [Audit of constants and their impact.]
+- **Environment Dependency Matrix**: [Observed differences in environment handling.]
 
 ---
 
-## ⚙️ 10. Environment & Configuration Matrix
-- **Runtime Toggles**: [Flags and environment variable impacts.]
-- **System Provisionization**: [CPU, Memory, and Disk usage requirements/footprints.]
-- **Hard-coded Constants**: [Audit of constants and their impact on system flexibility.]
-- **Environment Dependency Matrix**: [Comparison across Dev, Staging, and Production needs.]
+## 🧪 10. Instructional & Utility Logic
+- **Core Algorithms**: [Complex logic or mathematical processing.]
+- **Utility Methods**: [Supporting logic found in this scope.]
+- **Process Orchestration**: [How logic is sequenced.]
 
 ---
 
-## 🧵 11. Scheduled Processes & Automated Workflows
-- **Autonomous Lifecycle**: [Batch jobs, frequencies, and job reliability patterns.]
-- **Scheduler Engines**: [Cron, Kubernetes CronJob, Spring Scheduler, etc.]
-- **Workflow Triggers**: [Events or time-based signals.]
+## 🛡️ 11. Cross-Cutting Concerns (Logging/Observability)
+- **Logging Strategy**: [Observed logging levels and categories.]
+- **Telemetry Hooks**: [Metrics or tracing integration.]
+- **Audit Trails**: [Security or compliance logging.]
 
 ---
 
@@ -147,52 +147,48 @@
 <table width="100%">
   <thead>
     <tr>
-      <th>Error Code / Type</th>
+      <th>Error Type</th>
       <th>Handling Pattern</th>
       <th>Logic Gate</th>
       <th>Recovery Action</th>
-      <th>Success Metric</th>
+      <th>SLA Impact</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>[Error Type]</td>
+      <td>[Error Code]</td>
       <td>[Fail-fast/Retry]</td>
       <td>[Catch Block]</td>
-      <td>[Rollback/Alert]</td>
-      <td>[SLA Impact]</td>
+      <td>[Rollback/Log]</td>
+      <td>[Inferred]</td>
     </tr>
   </tbody>
 </table>
 
-- **Retry & Circuit Breaking**: [Existence of standard resilience patterns found in code.]
+- **Retry & Circuit Breaking**: [Existence of standard resilience patterns.]
 - **Self-Healing Capabilities**: [Automatic recovery or state correction logic.]
-- **Disaster Recovery Triggers**: [Fail-over logic and backup procedures.]
 
 ---
 
 ## 🔐 13. Security, Risk & Compliance Model
-- **Perimeter & Auth**: [Gateways, JWT, OAuth, or mTLS implementations.]
-- **Vulnerability Surface**: [Analysis of input sanitization and RBAC enforcement.]
-- **Compliance Alignment**: [PII, GDPR, HIPAA, and data localization rules.]
-- **Encryption Standards**: [Data-at-rest and data-in-transit protocols used.]
-- **Audit Logging Policy**: [Compliance-necessary data capture rules found in code.]
+- **Perimeter & Auth**: [Observed auth implementations.]
+- **Vulnerability Surface**: [Input sanitization and RBAC patterns.]
+- **Compliance Alignment**: [Hints of PII, GDPR, or HIPAA handling.]
+- **Encryption Standards**: [Data hashing or encryption observed.]
 
 ---
 
 ## ⚡ 14. Performance & Telemetry Characteristics
-- **Resource Intensity Audit**: [Analysis of I/O wait-times and CPU spikes.]
-- **Scalability Coefficient**: [Vertical and horizontal scaling readiness.]
-- **Latency SLAs**: [Targeted vs. actual performance markers (if documented in comments).]
-- **Concurrency Model**: [Thread-safety audit and locking mechanisms.]
+- **Resource Intensity**: [Observed I/O, loops, or complex ops.]
+- **Concurrency Model**: [Thread-safety and locking mechanisms.]
+- **Latency Indicators**: [Execution time hints found in code.]
 
 ---
 
 ## 🧪 15. Quality Assurance & Validation Logic
-- **Pre-Conditions**: [Mandatory state requirements before execution.]
-- **Post-Conditions**: [Verification of expected output and side effects.]
-- **Testing Ledger**: [Unit, Integration, and E2E coverage status found.]
-- **Code Coverage Impact**: [Assessment of critical logic coverage.]
+- **Pre-Conditions**: [Mandatory state requirements.]
+- **Post-Conditions**: [Expected output verification.]
+- **Testing Ledger**: [Unit, Integration, and E2E hints found.]
 
 ---
 
@@ -220,29 +216,24 @@
   </tbody>
 </table>
 
-- **Cyclomatic Complexity Audit**: [Identification of God-Methods and high-risk nodes.]
-- **Obsolescence Risk**: [Legacy dependencies or deprecated API usage.]
-- **Maintainability Coefficient**: [Ease of future updates or code refactoring.]
+- **Cyclomatic Complexity Audit**: [God-Methods and high-risk nodes.]
 
 ---
 
 ## 🔄 17. Governance & Change Control
 - **Audit Version**: [Enterprise Surgical V2.5 - Premium]
 - **Dissection Timestamp**: [Full Date/Time]
-- **Provenance Tracker**: [Documentation history and last modification audit.]
-- **Compliance Sign-off Status**: [Mapping of logic to regulatory requirements.]
+- **Audit Checksum**: `AUDIT_SIG_V2.5_ENTERPRISE_PREMIUM`
 
 ---
 
-## 🧭 18. Operational Runbook & ITSM
-- **Startup / Initialization**: [Sequence for system warm-up.]
-- **Health Indicators**: [Liveness/Readiness probes and exact check logic.]
-- **Graceful Degradation**: [Behavior under stress or partial failure.]
+## 📖 18. Reference Manifest & Artifact Links
+- **Source Linkage**: [Paths to primary source files.]
+- **Internal Refs**: [Links to related modules.]
 
 ---
 
-## 🧩 19. Procedural Summary (Surgical Dissection Biopsy)
-<!-- GUARDRAIL: Populate for every source file. 1:1 Mapping to Source Methods. -->
+## 🧩 19. Procedural Summary (Surgical Deconstruction)
 - **Structural Logic Biopsy Ledger**:
 
 <table width="100%">
@@ -252,7 +243,7 @@
       <th>Logic Breakdown (Surgical)</th>
       <th>Complexity (Cyc)</th>
       <th>Inherent Risk</th>
-      <th>Business Value</th>
+      <th>Functional Value</th>
     </tr>
   </thead>
   <tbody>
@@ -266,40 +257,46 @@
   </tbody>
 </table>
 
-- **Control Flow Complexity**: [Mathematical assessment of logic intensity.]
-- **Local Scope Audit**: [Variable usage and potential leaks within methods.]
-
 ---
 
-## 🧬 20. Architectural Justification (Reverse Engineered)
-- **Pattern Rationale**: [Why specific design patterns (Strategy, Factory, etc.) were applied.]
-- **Developer Assumption Audit**: [Analysis of defensive habits and assumptions.]
-- **Decision Record Reconstruction**: [Reverse-engineered ADR (Architectural Decision Record).]
-- **Logic Inversion**: [Conversion of technical gates to high-level business logic.]
+## 🧬 20. Pattern Observation Log (Reverse Engineered)
+- **Pattern Rationale**: [Inferred design patterns applied.]
+- **Developer Assumption Audit**: [Observed defensive habits.]
+- **Inferred Conventions**: [Project-specific naming or logic conventions.]
 
 ---
 
 ## 🚀 21. Modernization & Migration Roadmap
+- **Short-term Fixes**: [Immediate refactoring needs.]
+- **Strategic Migration**: [Long-term architectural moves.]
 
 ---
 
-## 23. 📎 Appendices
-- **Source Linkage**: [Direct paths to files/methods.]
-- **Cross-Reference Index**: [Link to related Surgical Archives.]
+## 📊 22. Visual Engineering (Mermaid Diagrams)
 
----
-
-## 📊 Visual Engineering (Mermaid)
 ### A. Component Infrastructure Topology
 ```mermaid
 graph TD
-    %% GUARDRAIL: Strict Syntax Only. 
-    [MAP_TOPOLOGY_HERE]
+    A["Entry Point"] --> B["Core Logic"]
+    B --> C{Decision}
+    C -- "Path A" --> D["Outcome A"]
+    C -- "Path B" --> E["Outcome B"]
 ```
 
 ### B. Functional Execution Call Trace
 ```mermaid
-graph TD
-    %% GUARDRAIL: Strict Syntax Only. Method-to-Method logic paths.
-    [TRACE_CALLS_HERE]
+sequenceDiagram
+    participant User
+    participant Logic
+    participant DB
+    User->>Logic: Request
+    Logic->>DB: Query
+    DB-->>Logic: Result
+    Logic-->>User: Response
 ```
+
+---
+
+## 🔏 23. System Integrity Checksum (Final Audit)
+- **Verification Result**: [COMPLIANT / MANUAL_REVIEW_REQUIRED]
+- **Auditor Signature**: Principal Enterprise Systems Auditor

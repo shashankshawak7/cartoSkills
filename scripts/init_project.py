@@ -1,38 +1,6 @@
 import os
 import json
-
-def load_ignore_map():
-    config_path = os.path.join(os.path.dirname(__file__), "..", "config", "ignore_map.json")
-    if os.path.exists(config_path):
-        with open(config_path, "r") as f:
-            return json.load(f)
-    return {"global": {"directories": [], "files": []}}
-
-def should_skip(path, name, is_dir, ignore_map):
-    all_dirs = []
-    all_files = []
-    for category in ignore_map.values():
-        all_dirs.extend(category.get("directories", []))
-        all_files.extend(category.get("files", []))
-    
-    if is_dir:
-        # Check for exact matches or wildcard/prefix matches
-        for d in all_dirs:
-            if name == d:
-                return True
-            if d.endswith('*') and name.startswith(d[:-1]):
-                return True
-            if d.startswith('.') and name.startswith(d):
-                return True
-        return False
-    else:
-        # Check for exact matches or extension wildcards
-        for f in all_files:
-            if name == f:
-                return True
-            if f.startswith('*') and name.endswith(f[1:]):
-                return True
-        return False
+from utils import load_ignore_map, should_skip, SUPPORTED_EXTENSIONS
 
 def get_project_tree(target_dir="."):
     ignore_map = load_ignore_map()
@@ -70,9 +38,7 @@ def get_project_tree(target_dir="."):
                 if child:
                     node["children"].append(child)
             else:
-                # Use the same list of supported extensions as init_documentation
-                extensions = [".java", ".cbl", ".jcl", ".p", ".cls", ".ts", ".tsx", ".js", ".jsx", ".c", ".cpp", ".h", ".cs", ".py", ".go", ".rs", ".rb", ".php", ".sh", ".sql", ".pas", ".yaml", ".yml", ".md", ".json", ".txt", ".html", ".css"]
-                if any(item.endswith(ext) for ext in extensions):
+                if any(item.endswith(ext) for ext in SUPPORTED_EXTENSIONS):
                     node["children"].append({
                         "name": item,
                         "path": os.path.relpath(full_path, target_dir),
@@ -117,10 +83,16 @@ def init_project(target_dir="."):
     with open("results/status.json", "w") as f:
         json.dump(status, f, indent=2)
     
-    # Initialize empty graph and symbol table
     if not os.path.exists("results/graph.json"):
         with open("results/graph.json", "w") as f:
-            json.dump({"nodes": [], "edges": []}, f, indent=2)
+            json.dump({
+                "nodes": [], 
+                "edges": [], 
+                "metadata": {
+                    "version": "4.0.0",
+                    "status": "CLEAN"
+                }
+            }, f, indent=2)
             
     if not os.path.exists("results/symbol_table.json"):
         with open("results/symbol_table.json", "w") as f:

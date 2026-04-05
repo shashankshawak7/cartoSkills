@@ -42,4 +42,4 @@ Run `init_project.py` to establish the environment and strictly validate `status
 ---
 
 ## 🧠 Architectural Risk Tagging
-During abstraction, if the Cartographer detects "High Cyclomatic Complexity" (massive functions) or "God Classes," it must append the property `"architectural_risk": "HIGH"` directly to the Node's JSON metadata to flag it for the modernization pipeline.
+During abstraction, if the Cartographer detects "High Cyclomatic Complexity" (massive functions) or "God Classes," it must append the property `"architectural_risk": "HIGH"` (Standard Enum: LOW, MEDIUM, HIGH, CRITICAL) directly to the Node's JSON metadata to flag it for the modernization pipeline.

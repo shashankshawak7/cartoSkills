@@ -18,7 +18,7 @@
     "type": {
       "type": "string",
       "description": "The nature of the structural relationship.",
-      "enum": ["CONTAINS", "CALLS", "EXTENDS", "IMPLEMENTS", "USES", "DECORATES", "TRIGGERS", "STYLES", "RENDERS"]
+      "enum": ["CONTAINS", "CALLS", "EXTENDS", "IMPLEMENTS", "USES", "DECORATES", "TRIGGERS", "STYLES", "RENDERS", "OVERRIDES", "UNKNOWN_RELATION"]
     },
     "properties": {
       "type": "object",

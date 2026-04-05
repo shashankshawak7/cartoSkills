@@ -43,6 +43,12 @@
         "entry_point": { "type": "boolean", "default": false },
         "external": { "type": "boolean", "default": false },
         "placeholder": { "type": "boolean", "default": false },
+        "architectural_risk": { 
+          "type": "string", 
+          "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"],
+          "description": "Risk identifier for modernization pipeline."
+        },
+        "audit_status": { "type": "string", "description": "Manual review or automated status." },
         "metadata": { "type": "object", "description": "Flexible container for language-specific nuances." }
       },
       "additionalProperties": false

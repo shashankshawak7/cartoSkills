@@ -77,7 +77,7 @@ The engine uses a centralized **Ignore Map** to strictly exclude environmental n
 ```sh
 Act as the **Universal Retro Documentor Manager**. Your mission is to autonomously generate a high-fidelity **Enterprise Surgical Archive** for the entire project. 
 1. **Zero-Touch Execution**: Do not stop to ask for feedback, approval, or implementation plans. 
-2. **Recursive Auditing**: Iterate through "results/documentation_status.json". For every file where 'documented' is 'false':
+2. **Recursive Auditing**: Iterate through "results/documentation_status.json". For every file where 'documented' is false:
    - Perform a **Surgical Dissection** using the **Absolute 1-23 Standard** from "template.md".
    - Generate a corresponding ".md" archive in the "documentation/" shadow root (maintaining 1:1 directory symmetry).
    - Generate a "README.md" for every directory and the project root that synthesizes the 23 sections for that scope.
@@ -86,15 +86,15 @@ Act as the **Universal Retro Documentor Manager**. Your mission is to autonomous
 Start now by documenting the Project Root and the first batch of pending files.
 ```
 
-##trigger carotgrapher
+## Trigger Cartographer
 ```sh
 Act as the **Universal Code Cartographer Manager**. Your mission is to autonomously map the architectural and execution hierarchy of the entire project into a high-fidelity Neo4j-ready meta-model.
 1. **Zero-Touch Execution**: Do not stop to ask for feedback, approval, or implementation plans. 
-2. **Recursive Mapping**: Iterate through "results/mapping_status.json". For every file where 'mapped' is 'false':
+2. **Recursive Mapping**: Iterate through "results/status.json". For every file where 'status' is 'NOT_STARTED':
    - Perform a **Structural Extraction** using the **Universal Meta-Model (UCCS)** from "SKILL.md".
    - Enforce the **Enterprise URI ID Protocol** (`lang://path#Symbol`) for every node.
    - Generate a valid JSON payload for every successfully parsed `:Container`, `:Structure`, and `:Unit`.
 3. **Protocol Adherence**: Strictly follow the **Zero-Hallucination Protocol** and the **Architectural Risk Tagging** mandate from "SKILL.md". Use the **Enterprise Parser Worker** for extraction.
-4. **Persistence**: Continue this loop until every entry in "results/mapping_status.json" is marked 'mapped: true' and the final graph is merged into "results/graph.json".
+4. **Persistence**: Continue this loop until every entry in "results/status.json" has "status": "COMPLETED" and the final graph is merged into "results/graph.json".
 Start now by mapping the core entry points and the first batch of pending files.
 ```

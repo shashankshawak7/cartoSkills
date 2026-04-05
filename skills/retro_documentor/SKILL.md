@@ -1,12 +1,12 @@
 # Universal Retro Documentor Engine: Enterprise Premium Standard
 
-The **Universal Retro Documentor Engine** is an enterprise-grade surgical auditing system. It moves beyond "documentation" into **"Architectural Autopsy"**, ensuring 100% visibility into every logic gate, state mutation, and business ROI vector.
+The **Universal Retro Documentor Engine** is an enterprise-grade surgical auditing system. It moves beyond "documentation" into **"Architectural Autopsy"**, ensuring 100% visibility into every logic gate, state mutation, and technical impact.
 
 ---
 
 ## 🛡️ The Enterprise Premium Protocol
 
-Every artifact (Project, Module, File) MUST follow the **Absolute 1-23 Surgical Standard v2.5**. No summarization is permitted.
+Every artifact (Project, Module, File) MUST follow the **Absolute 1-23 Surgical Standard v2.5**. NO SUMMARIZATION OF EXISTING EVIDENCE IS PERMITTED.
 
 ### 🗺️ The Tri-Layer Architectural Mirror Protocol
 The engine must establish a hierarchical shadow of the source tree at three distinct layers of resolution. **Every level (Project, Module, File) MUST follow the Absolute 1-23 Surgical Standard.**
@@ -15,9 +15,14 @@ The engine must establish a hierarchical shadow of the source tree at three dist
     - **Location**: `documentation/README.md`.
     - **Scope**: Deconstruction of the entire application ecosystem from 1-23.
 2.  **Layer 2: Module-Scope Surgical Audit (Folder Roots)**
-1.  **Pass 0: Signature Scan**: Map metadata, scopes, and surface.
-2.  **Pass 1: Logic & ROI Audit**: Trace every control-flow path and map to business value.
-3.  **Pass 2: State Mutation Scan**: Trace every field mutation and side effect.
+    - **Location**: `documentation/.../README.md`.
+    - **Pass 0: Signature Scan**: Map metadata, scopes, and surface of the module.
+    - **Pass 1: Logic & Functional Audit**: Trace every control-flow path and map to technical impact.
+    - **Pass 2: State Mutation Scan**: Trace shared state and side effects within the module.
+3.  **Layer 3: File-Scope Surgical Audit (Source Files)**
+    - **Location**: `documentation/.../FileName.md`.
+    - **Scope**: Full 1-23 dissection of a single source artifact.
+    - **Mandate**: 1:1 mapping to source logic. Zero omission.
 
 ---
 
@@ -32,7 +37,7 @@ The engine must establish a hierarchical shadow of the source tree at three dist
 - **Syntax Guardrails**:
     - Always use explicit Node IDs and Quoted Labels.
     - Style and classDef blocks must be at the END.
-    - Use `@icon:fa:...` for node icons where applicable.
+    - **No FontAwesome**: Use standard Mermaid shapes only. Do not use `@icon:fa` tags.
 
 ---
 
