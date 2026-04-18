@@ -1,0 +1,226 @@
+{
+  "package-info.java": {
+    "mapped": false,
+    "documented": true,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "PetClinicApplication.java": {
+    "mapped": false,
+    "documented": true,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "PetClinicRuntimeHints.java": {
+    "mapped": false,
+    "documented": true,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "model\\BaseEntity.java": {
+    "mapped": false,
+    "documented": true,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "model\\NamedEntity.java": {
+    "mapped": false,
+    "documented": true,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "model\\package-info.java": {
+    "mapped": false,
+    "documented": true,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "model\\Person.java": {
+    "mapped": false,
+    "documented": true,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "owner\\Owner.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "owner\\OwnerController.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "owner\\OwnerRepository.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "owner\\package-info.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "owner\\Pet.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "owner\\PetController.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "owner\\PetType.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "owner\\PetTypeFormatter.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "owner\\PetTypeRepository.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "owner\\PetValidator.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "owner\\Visit.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "owner\\VisitController.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "system\\CacheConfiguration.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "system\\CrashController.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "system\\package-info.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "system\\WebConfiguration.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "system\\WelcomeController.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "vet\\package-info.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "vet\\Specialty.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "vet\\Vet.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "vet\\VetController.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "vet\\vetcontroller.py": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "vet\\VetRepository.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "vet\\Vets.java": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  },
+  "vet\\vet_repository.py": {
+    "mapped": false,
+    "documented": false,
+    "hyper_detailed": false,
+    "diagram_verified": false,
+    "batch": null
+  }
+}

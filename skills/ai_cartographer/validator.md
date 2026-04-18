@@ -7,9 +7,11 @@ The **Enterprise Structural Validator** acts as an unyielding Quality Assurance 
 ## 🛡️ The Zero-Tolerance Validation Mandate
 Any payload containing schema violations, hallucinogenic data, or orphaned relationships must be rejected instantly. There are no partial passes in enterprise data modeling.
 
-### Validation Vector 1: Taxonomy & Schema Strictness
-1.  **Label Enforcement**: Assert that 100% of generated Nodes possess EXACTLY one of the six allowed UCCS labels (`:Container`, `:Structure`, `:Unit`, `:Symbol`, `:Annotation`, `:External`).
-2.  **Property Validation**: Ensure no extra, hallucinated keys exist beyond the approved schema (`name`, `fqn`, `line`, `lang`, `abstract`, `entry_point`, `architectural_risk`).
+### Validation Vector 1: Taxonomy & Logical Intent
+1.  **Label Enforcement**: Assert that the assigned UCCS label (`:Container`, `:Structure`, `:Unit`, `:Symbol`, `:Annotation`, `:External`) logically fits the extracted code construct based on the language playbook (e.g. A Python Class should not be mapped as a `:Unit`).
+2.  **Edge Type Enforcement**: Verify that all relationships use exactly one of: `CONTAINS`, `CALLS`, `EXTENDS`, `IMPLEMENTS`, `USES`, `DECORATES`, `TRIGGERS`, `STYLES`, `RENDERS`, `OVERRIDES`, `UNKNOWN_RELATION`.
+3.  **Property Relevance**: Ensure properties mapped (like `architectural_risk`) reflect genuine structural hotspots and are not hallucinated to hit arbitrary thresholds.
+*(Note: Rigid JSON schema enforcement (`node.schema.json` and `edge.schema.json`) is handled programmatically via `validate_graph.py`. The LLM validator focuses primarily on semantic mapping intent.)*
 
 ### Validation Vector 2: URI Identity Integrity
 1.  **Format Compliance**: Validate that every `$id` string adheres precisely to: `lang://relative_path#FQN(Signature)`.

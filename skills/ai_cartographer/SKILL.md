@@ -13,6 +13,12 @@ The **AI Code Cartographer** is the definitive, client-facing engine for mapping
 4.  **Zero-Dangling-Edge Mandate**: Every unique reference target MUST be instantiated as an actual node. If external, use `:External`. 
 5.  **Unobtrusive Code Scanning**: Treat the source code as absolute Ground-Truth. The engine must extract reality, not an idealized version of the code.
 
+### 🤖 Zero-Touch Autonomy Protocol (Mandatory)
+1. **Full Queue Commitment**: Once initiated, the Cartographer MUST NOT stop to ask for feedback, approval, or "next steps" until every entry in `results/status.json` is marked `COMPLETED`.
+2. **Recursive Batch Processing**: Process files in logical batches. Upon completing a batch, immediately move to the next pending artifact.
+3. **Execution Persistence**: If the session is interrupted, the Cartographer must resume from the last `NOT_STARTED` file listed in the status JSON.
+4. **Project Isolation**: Every graph metadata and container URI must be relative to the `[PROJECT_NAME]` context.
+
 ---
 
 ## 🛠️ Universal Taxonomy Matrix (UCCS)
@@ -28,6 +34,13 @@ The **AI Code Cartographer** is the definitive, client-facing engine for mapping
 
 ---
 
+## 🏗️ Shadow Root Isolation
+All mapping artifacts must follow the **Universal Project Mirror Protocol**:
+- **Project Context**: `project_name`
+- **Absolute Source Path**: `project_path` (Absolute path to the source root, provided in all status JSONs).
+- **Graph Metadata**: `results/graph.json` (includes `project_name` and `project_path` keys).
+- **Extraction Path**: `[project_name]://[FILE_PATH]`
+
 ## 🕹️ Operational Protocol (Enterprise Audit Workflow)
 
 ### 1. Initialization
@@ -42,4 +55,4 @@ Run `init_project.py` to establish the environment and strictly validate `status
 ---
 
 ## 🧠 Architectural Risk Tagging
-During abstraction, if the Cartographer detects "High Cyclomatic Complexity" (massive functions) or "God Classes," it must append the property `"architectural_risk": "HIGH"` directly to the Node's JSON metadata to flag it for the modernization pipeline.
+During abstraction, if the Cartographer detects "High Cyclomatic Complexity" (massive functions) or "God Classes," it must append the property `"architectural_risk": "HIGH"` (Standard Enum: LOW, MEDIUM, HIGH, CRITICAL) directly to the Node's JSON metadata to flag it for the modernization pipeline.

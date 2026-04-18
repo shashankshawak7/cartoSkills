@@ -10,7 +10,8 @@
       "properties": {
         "project": { "type": "string" },
         "generated_at": { "type": "string", "format": "date-time" },
-        "version": { "type": "string" }
+        "version": { "type": "string" },
+        "status": { "type": "string" }
       }
     },
     "nodes": {

@@ -1,0 +1,704 @@
+[
+  {
+    "file": "README.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "config\\ignore_map.json",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "documentation\\config\\ignore_map.json.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "documentation.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "init_pipeline.py",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "irmapper\\config\\ignore_map.json.yaml",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "irmapper\\documentation.md.yaml",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "irmapper\\legacy\\ORDER_ENTRY.xml.yaml",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "irmapper\\legacy\\UMyManager.pas.yaml",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "irmapper\\legacy\\order_manager.cls.yaml",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "irmapper\\scripts\\init_project.py.yaml",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "irmapper\\scripts\\utils.py.yaml",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "legacy\\ORDER_ENTRY.xml",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "legacy\\UMyManager.pas",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "legacy\\order_manager.cls",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "prompts\\documentor_worker.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "prompts\\irmapper_worker.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "prompts\\manager.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "prompts\\modernizer_worker.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "prompts\\parser_worker.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "schemas\\edge.schema.json",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "schemas\\graph.schema.json",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "schemas\\node.schema.json",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "schemas\\symbol_table.schema.json",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "scripts\\init_documentation.py",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "scripts\\init_irmapper.py",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "scripts\\init_modernizer.py",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "scripts\\init_project.py",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "scripts\\modernizer_orchestrator.py",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "scripts\\utils.py",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "scripts\\validate_graph.py",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\SKILL.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\c_cpp.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\cobol.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\delphi.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\dotnet.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\go.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\java.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\jcl.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\oracle_forms.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\php.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\progress4gl.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\python.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\ruby.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\rust.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\shell.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\sql.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\vb_vba.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\web_logic.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\languages\\web_ui.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\ai_cartographer\\validator.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\SKILL.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\SCHEMA.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\backend\\django_rest_framework.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\backend\\dotnet_core_clean.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\backend\\fastapi_async.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\backend\\go_gin_echo.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\backend\\laravel_modern.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\backend\\micronaut.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\backend\\nestjs_modular.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\backend\\play_framework.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\backend\\quarkus_native.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\backend\\ruby_on_rails.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\backend\\rust_axum.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\backend\\spring_boot_microservices.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\backend\\vertx_reactive.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\frontend\\angular_enterprise.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\frontend\\blazor_wasm.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\frontend\\dotnet_mvc_razor.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\frontend\\react_enterprise_ts.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\frontend\\vue_nuxt.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\fullstack\\nextjs_fullstack.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\digital_modernizer\\blueprints\\mobile\\flutter_clean.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\irmapper_skill\\SKILL.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\irmapper_skill\\template.yaml",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\retro_documentor\\SKILL.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "skills\\retro_documentor\\template.md",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  },
+  {
+    "file": "tmp_modernize_step.py",
+    "mapped": false,
+    "modernized": false,
+    "target_stack": "PENDING",
+    "test_generated": false,
+    "error_log": null,
+    "retry_count": 0
+  }
+]

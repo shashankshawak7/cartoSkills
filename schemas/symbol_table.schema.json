@@ -8,7 +8,7 @@
       "type": "object",
       "required": ["kind", "name", "target_file"],
       "properties": {
-        "kind": { "enum": ["Structure", "Unit", "Symbol", "External"] },
+        "kind": { "enum": ["Container", "Structure", "Unit", "Symbol", "Annotation", "External"] },
         "name": { "type": "string" },
         "fqn": { "type": "string" },
         "target_file": { "type": "string" },

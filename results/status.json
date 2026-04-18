@@ -1,6 +1,232 @@
 {
-  "batches": [],
-  "current_batch_index": 0,
-  "status": "IDLE",
-  "last_updated": null
+  "files": [
+    {
+      "path": "PetClinicApplication.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "PetClinicRuntimeHints.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "model\\BaseEntity.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "model\\NamedEntity.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "model\\Person.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "model\\package-info.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "owner\\Owner.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "owner\\OwnerController.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "owner\\OwnerRepository.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "owner\\Pet.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "owner\\PetController.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "owner\\PetType.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "owner\\PetTypeFormatter.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "owner\\PetTypeRepository.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "owner\\PetValidator.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "owner\\Visit.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "owner\\VisitController.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "owner\\package-info.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "package-info.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "system\\CacheConfiguration.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "system\\CrashController.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "system\\WebConfiguration.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "system\\WelcomeController.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "system\\package-info.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "vet\\Specialty.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "vet\\Vet.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "vet\\VetController.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "vet\\VetRepository.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "vet\\Vets.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "vet\\package-info.java",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "vet\\vet_repository.py",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    },
+    {
+      "path": "vet\\vetcontroller.py",
+      "status": "NOT_STARTED",
+      "extracted_symbols": [],
+      "error": null,
+      "parsed_at": null
+    }
+  ],
+  "global_symbols": [],
+  "total_files": 32,
+  "completed_files": 0,
+  "root_dir": "C:\\Users\\shash\\Downloads\\spring-petclinic-main\\petclinic"
 }

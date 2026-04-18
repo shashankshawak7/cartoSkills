@@ -1,15 +1,19 @@
 import os
 import json
+from utils import load_ignore_map, should_skip, SUPPORTED_EXTENSIONS
 
 def get_project_tree(target_dir="."):
-    ignore_dirs = {".git", "__pycache__", "node_modules", ".venv", "venv", "dist", "build"}
-    ignore_files = {".gitignore", "package-lock.json", "poetry.lock", "status.json", "graph.json", "project_tree.json", "symbol_table.json"}
+    ignore_map = load_ignore_map()
     
     def build_tree(path):
         name = os.path.basename(path)
         if not name:
             name = "root"
         
+        is_dir = os.path.isdir(path)
+        if should_skip(path, name, is_dir, ignore_map):
+            return None
+
         node = {
             "name": name,
             "path": os.path.relpath(path, target_dir) if path != target_dir else ".",
@@ -23,16 +27,18 @@ def get_project_tree(target_dir="."):
             return None
             
         for item in sorted(items):
-            if item in ignore_dirs or item in ignore_files:
+            full_path = os.path.join(path, item)
+            child_is_dir = os.path.isdir(full_path)
+            
+            if should_skip(full_path, item, child_is_dir, ignore_map):
                 continue
                 
-            full_path = os.path.join(path, item)
-            if os.path.isdir(full_path):
+            if child_is_dir:
                 child = build_tree(full_path)
                 if child:
                     node["children"].append(child)
             else:
-                if any(item.endswith(ext) for ext in [".py", ".js", ".ts", ".java", ".cpp", ".c", ".go"]):
+                if any(item.endswith(ext) for ext in SUPPORTED_EXTENSIONS):
                     node["children"].append({
                         "name": item,
                         "path": os.path.relpath(full_path, target_dir),
@@ -43,10 +49,22 @@ def get_project_tree(target_dir="."):
     return build_tree(target_dir)
 
 def init_project(target_dir="."):
+    target_abs_path = os.path.abspath(target_dir)
+    project_name = os.path.basename(target_abs_path.rstrip(os.sep))
+    if not project_name:
+        project_name = "root"
+
     if not os.path.exists("results"):
         os.makedirs("results")
         
-    tree = get_project_tree(target_dir)
+    tree = get_project_tree(target_abs_path)
+    # Add project metadata to the tree
+    tree = {
+        "project_name": project_name,
+        "project_path": target_abs_path,
+        **tree
+    }
+    
     with open("results/project_tree.json", "w") as f:
         json.dump(tree, f, indent=2)
     
@@ -67,26 +85,38 @@ def init_project(target_dir="."):
     flat_files(tree)
     
     status = {
+        "project_name": project_name,
+        "project_path": target_abs_path,
         "files": files_to_process,
         "global_symbols": [],
         "total_files": len(files_to_process),
-        "completed_files": 0,
-        "root_dir": os.path.abspath(target_dir)
+        "completed_files": 0
     }
     
     with open("results/status.json", "w") as f:
         json.dump(status, f, indent=2)
     
-    # Initialize empty graph and symbol table
     if not os.path.exists("results/graph.json"):
         with open("results/graph.json", "w") as f:
-            json.dump({"nodes": [], "edges": []}, f, indent=2)
+            json.dump({
+                "nodes": [], 
+                "edges": [], 
+                "metadata": {
+                    "version": "4.0.0",
+                    "status": "CLEAN",
+                    "project_name": project_name,
+                    "project_path": target_abs_path
+                }
+            }, f, indent=2)
             
     if not os.path.exists("results/symbol_table.json"):
         with open("results/symbol_table.json", "w") as f:
-            json.dump({}, f, indent=2)
+            json.dump({
+                "project_name": project_name,
+                "project_path": target_abs_path
+            }, f, indent=2)
 
-    print(f"Project initialized.")
+    print(f"Project '{project_name}' initialized.")
     print(f"Project Tree saved to results/project_tree.json")
     print(f"Found {len(files_to_process)} files to process.")
 

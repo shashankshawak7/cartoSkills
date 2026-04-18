@@ -1,9 +1,201 @@
 {
-  "project_name": "UNNAMED",
-  "root_path": null,
-  "tree": {},
-  "metadata": {
-    "version": "4.0.0",
-    "status": "CLEAN"
-  }
+  "name": "petclinic",
+  "path": ".",
+  "type": "folder",
+  "children": [
+    {
+      "name": "PetClinicApplication.java",
+      "path": "PetClinicApplication.java",
+      "type": "file"
+    },
+    {
+      "name": "PetClinicRuntimeHints.java",
+      "path": "PetClinicRuntimeHints.java",
+      "type": "file"
+    },
+    {
+      "name": "model",
+      "path": "model",
+      "type": "folder",
+      "children": [
+        {
+          "name": "BaseEntity.java",
+          "path": "model\\BaseEntity.java",
+          "type": "file"
+        },
+        {
+          "name": "NamedEntity.java",
+          "path": "model\\NamedEntity.java",
+          "type": "file"
+        },
+        {
+          "name": "Person.java",
+          "path": "model\\Person.java",
+          "type": "file"
+        },
+        {
+          "name": "package-info.java",
+          "path": "model\\package-info.java",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "owner",
+      "path": "owner",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Owner.java",
+          "path": "owner\\Owner.java",
+          "type": "file"
+        },
+        {
+          "name": "OwnerController.java",
+          "path": "owner\\OwnerController.java",
+          "type": "file"
+        },
+        {
+          "name": "OwnerRepository.java",
+          "path": "owner\\OwnerRepository.java",
+          "type": "file"
+        },
+        {
+          "name": "Pet.java",
+          "path": "owner\\Pet.java",
+          "type": "file"
+        },
+        {
+          "name": "PetController.java",
+          "path": "owner\\PetController.java",
+          "type": "file"
+        },
+        {
+          "name": "PetType.java",
+          "path": "owner\\PetType.java",
+          "type": "file"
+        },
+        {
+          "name": "PetTypeFormatter.java",
+          "path": "owner\\PetTypeFormatter.java",
+          "type": "file"
+        },
+        {
+          "name": "PetTypeRepository.java",
+          "path": "owner\\PetTypeRepository.java",
+          "type": "file"
+        },
+        {
+          "name": "PetValidator.java",
+          "path": "owner\\PetValidator.java",
+          "type": "file"
+        },
+        {
+          "name": "Visit.java",
+          "path": "owner\\Visit.java",
+          "type": "file"
+        },
+        {
+          "name": "VisitController.java",
+          "path": "owner\\VisitController.java",
+          "type": "file"
+        },
+        {
+          "name": "package-info.java",
+          "path": "owner\\package-info.java",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "package-info.java",
+      "path": "package-info.java",
+      "type": "file"
+    },
+    {
+      "name": "results",
+      "path": "results",
+      "type": "folder",
+      "children": []
+    },
+    {
+      "name": "system",
+      "path": "system",
+      "type": "folder",
+      "children": [
+        {
+          "name": "CacheConfiguration.java",
+          "path": "system\\CacheConfiguration.java",
+          "type": "file"
+        },
+        {
+          "name": "CrashController.java",
+          "path": "system\\CrashController.java",
+          "type": "file"
+        },
+        {
+          "name": "WebConfiguration.java",
+          "path": "system\\WebConfiguration.java",
+          "type": "file"
+        },
+        {
+          "name": "WelcomeController.java",
+          "path": "system\\WelcomeController.java",
+          "type": "file"
+        },
+        {
+          "name": "package-info.java",
+          "path": "system\\package-info.java",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "vet",
+      "path": "vet",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Specialty.java",
+          "path": "vet\\Specialty.java",
+          "type": "file"
+        },
+        {
+          "name": "Vet.java",
+          "path": "vet\\Vet.java",
+          "type": "file"
+        },
+        {
+          "name": "VetController.java",
+          "path": "vet\\VetController.java",
+          "type": "file"
+        },
+        {
+          "name": "VetRepository.java",
+          "path": "vet\\VetRepository.java",
+          "type": "file"
+        },
+        {
+          "name": "Vets.java",
+          "path": "vet\\Vets.java",
+          "type": "file"
+        },
+        {
+          "name": "package-info.java",
+          "path": "vet\\package-info.java",
+          "type": "file"
+        },
+        {
+          "name": "vet_repository.py",
+          "path": "vet\\vet_repository.py",
+          "type": "file"
+        },
+        {
+          "name": "vetcontroller.py",
+          "path": "vet\\vetcontroller.py",
+          "type": "file"
+        }
+      ]
+    }
+  ]
 }

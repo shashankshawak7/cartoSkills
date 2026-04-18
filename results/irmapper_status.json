@@ -1,0 +1,470 @@
+{
+  "README.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "config\\ignore_map.json": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "documentation\\config\\ignore_map.json.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "documentation.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "init_pipeline.py": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "irmapper\\config\\ignore_map.json.yaml": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "irmapper\\documentation.md.yaml": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "irmapper\\legacy\\ORDER_ENTRY.xml.yaml": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "irmapper\\legacy\\UMyManager.pas.yaml": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "irmapper\\legacy\\order_manager.cls.yaml": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "irmapper\\scripts\\init_project.py.yaml": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "irmapper\\scripts\\utils.py.yaml": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "legacy\\ORDER_ENTRY.xml": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "legacy\\UMyManager.pas": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "legacy\\order_manager.cls": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "prompts\\documentor_worker.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "prompts\\irmapper_worker.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "prompts\\manager.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "prompts\\modernizer_worker.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "prompts\\parser_worker.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "schemas\\edge.schema.json": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "schemas\\graph.schema.json": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "schemas\\node.schema.json": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "schemas\\symbol_table.schema.json": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "scripts\\init_documentation.py": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "scripts\\init_irmapper.py": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "scripts\\init_modernizer.py": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "scripts\\init_project.py": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "scripts\\modernizer_orchestrator.py": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "scripts\\utils.py": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "scripts\\validate_graph.py": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\SKILL.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\c_cpp.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\cobol.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\delphi.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\dotnet.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\go.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\java.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\jcl.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\oracle_forms.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\php.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\progress4gl.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\python.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\ruby.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\rust.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\shell.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\sql.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\vb_vba.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\web_logic.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\languages\\web_ui.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\ai_cartographer\\validator.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\SKILL.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\SCHEMA.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\backend\\django_rest_framework.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\backend\\dotnet_core_clean.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\backend\\fastapi_async.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\backend\\go_gin_echo.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\backend\\laravel_modern.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\backend\\micronaut.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\backend\\nestjs_modular.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\backend\\play_framework.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\backend\\quarkus_native.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\backend\\ruby_on_rails.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\backend\\rust_axum.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\backend\\spring_boot_microservices.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\backend\\vertx_reactive.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\frontend\\angular_enterprise.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\frontend\\blazor_wasm.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\frontend\\dotnet_mvc_razor.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\frontend\\react_enterprise_ts.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\frontend\\vue_nuxt.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\fullstack\\nextjs_fullstack.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\digital_modernizer\\blueprints\\mobile\\flutter_clean.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\irmapper_skill\\SKILL.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\irmapper_skill\\template.yaml": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\retro_documentor\\SKILL.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "skills\\retro_documentor\\template.md": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  },
+  "tmp_modernize_step.py": {
+    "mapped": false,
+    "logic_mapped": false,
+    "statement_level": false,
+    "checksum": null
+  }
+}
